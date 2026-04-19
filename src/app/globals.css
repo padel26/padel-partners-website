@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --font-display: "Neue Haas Grotesk Display Pro", "Inter", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+
+  --color-court-green: #1A6B3A;
+  --color-court-green-light: #E8F5EE;
+  --color-padel-black: #141414;
+  --color-baseline-grey: #F4F4F2;
+  --color-net-silver: #8C8C8C;
+  --color-turf-gold: #C9A84C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-padel-black);
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-court-green);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: var(--color-court-green-light);
+  color: var(--color-padel-black);
+}
