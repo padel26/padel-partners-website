@@ -42,7 +42,7 @@ export default function ContactPage() {
               Contact
             </p>
             <h1
-              className="text-5xl lg:text-6xl font-bold text-padel-black mb-4"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Let&apos;s talk.
@@ -55,7 +55,7 @@ export default function ContactPage() {
       </section>
 
       <section className="pb-20 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Form */}
           <div>
             {status === "success" ? (
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     required
-                    rows={5}
+                    rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-2.5 rounded-md border border-gray-200 bg-white text-padel-black text-sm placeholder:text-net-silver focus:outline-none focus:ring-2 focus:ring-court-green focus:border-transparent resize-none"
@@ -157,7 +157,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full py-3 bg-court-green text-white font-semibold rounded-md hover:bg-court-green-dark transition-colors disabled:opacity-60 text-sm"
+                  className="w-full min-h-[44px] py-3 bg-court-green text-white font-semibold rounded-md hover:bg-court-green-dark transition-colors disabled:opacity-60 text-sm"
                 >
                   {status === "loading" ? "Sending..." : "Send Message"}
                 </button>

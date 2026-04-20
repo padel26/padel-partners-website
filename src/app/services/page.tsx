@@ -114,7 +114,7 @@ export default function ServicesPage() {
               Bolt-On Services
             </p>
             <h1
-              className="text-5xl lg:text-6xl font-bold text-padel-black mb-4"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Expert services. Every phase.
@@ -140,7 +140,7 @@ export default function ServicesPage() {
                 </h2>
                 <p className="text-net-silver">{cat.description}</p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                 {cat.services.map((service) => (
                   <div
                     key={service.name}
@@ -164,7 +164,7 @@ export default function ServicesPage() {
                           <input type="hidden" name="serviceName" value={service.name} />
                           <button
                             type="submit"
-                            className="w-full py-2 px-3 bg-court-green text-white text-xs font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+                            className="w-full min-h-[44px] px-3 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
                           >
                             Buy Now
                           </button>
@@ -172,16 +172,16 @@ export default function ServicesPage() {
                       ) : (
                         <a
                           href="/contact?type=quote"
-                          className="flex-1 text-center py-2 px-3 bg-court-green text-white text-xs font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+                          className="flex-1 flex items-center justify-center min-h-[44px] px-3 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
                         >
-                          Request a Quote
+                          Get a Quote
                         </a>
                       )}
                       <a
                         href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 text-center py-2 px-3 border border-gray-200 text-padel-black text-xs font-medium rounded-md hover:bg-baseline-grey transition-colors"
+                        className="flex-1 flex items-center justify-center min-h-[44px] px-3 border border-gray-200 text-padel-black text-sm font-medium rounded-md hover:bg-baseline-grey transition-colors"
                       >
                         Book a Call
                       </a>
@@ -202,7 +202,7 @@ export default function ServicesPage() {
               Exclusive Partnership
             </p>
             <h2
-              className="text-4xl font-bold text-white mb-4"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Premium court supply from Spain

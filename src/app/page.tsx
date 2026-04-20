@@ -121,7 +121,7 @@ export default function Home() {
               </span>
             </div>
             <h1
-              className="text-5xl lg:text-6xl xl:text-7xl font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Your strategic partner for padel club development.
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gray-100 rounded-xl overflow-hidden mt-16 border border-gray-100">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gray-100 rounded-xl overflow-hidden mt-10 sm:mt-16 border border-gray-100">
             {stats.map((stat) => (
               <div key={stat.value} className="bg-white px-6 py-8 text-center">
                 <div
@@ -170,7 +170,7 @@ export default function Home() {
               How we work
             </p>
             <h2
-              className="text-4xl lg:text-5xl font-bold text-padel-black mb-4"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Expert guidance. Every stage.
@@ -179,7 +179,7 @@ export default function Home() {
               Our structured 8-phase, 18-milestone framework means clients always know where they are and what comes next. No guesswork. No costly surprises.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {phases.map((phase, i) => (
               <div key={phase.name} className="bg-white rounded-xl p-6 border border-gray-100 shadow-card">
                 <div className="w-8 h-8 bg-court-green-light rounded-md flex items-center justify-center mb-4">
@@ -198,13 +198,13 @@ export default function Home() {
       {/* Why TPP */}
       <section className="py-20 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
                 Why The Padel Partners
               </p>
               <h2
-                className="text-4xl lg:text-5xl font-bold text-padel-black mb-6"
+                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-6"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Not just consultancy. A genuine partnership.
@@ -242,7 +242,7 @@ export default function Home() {
               Packages
             </p>
             <h2
-              className="text-4xl lg:text-5xl font-bold text-padel-black mb-4"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Support at every scale
@@ -251,7 +251,7 @@ export default function Home() {
               Six tiers from early-stage guidance to full embedded expert support. Pick the package that matches where you are today.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
@@ -357,7 +357,7 @@ export default function Home() {
       <section className="py-20 px-6 lg:px-8 bg-padel-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2
-            className="text-4xl lg:text-5xl font-bold text-white mb-6"
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Ready to build your padel club?

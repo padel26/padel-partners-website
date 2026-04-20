@@ -162,7 +162,7 @@ export default function PackagesPage() {
             Monthly Packages
           </p>
           <h1
-            className="text-5xl lg:text-6xl font-bold text-padel-black mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Support at every scale
@@ -175,11 +175,11 @@ export default function PackagesPage() {
 
       {/* Packages grid */}
       <section className="pb-20 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className={`rounded-2xl p-7 flex flex-col relative ${
+              className={`rounded-2xl p-5 sm:p-7 flex flex-col relative ${
                 pkg.highlight
                   ? "bg-court-green ring-2 ring-court-green"
                   : "bg-white border border-gray-200 shadow-card"
@@ -280,7 +280,7 @@ export default function PackagesPage() {
           >
             All packages include
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {[
               "Access to client portal",
               "Resource library",

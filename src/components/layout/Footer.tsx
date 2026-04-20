@@ -26,10 +26,10 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-padel-black text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-court-green rounded-sm flex items-center justify-center">
                 <span className="text-white font-bold text-sm">TPP</span>
@@ -93,7 +93,7 @@ export default function Footer() {
               href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-4 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors mb-4"
+              className="inline-flex items-center min-h-[44px] px-4 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors mb-4"
             >
               Book a Call
             </a>

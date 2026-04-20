@@ -85,7 +85,7 @@ export default function TrustedByPage() {
               Trusted By
             </p>
             <h1
-              className="text-5xl lg:text-6xl font-bold text-padel-black mb-4"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Projects delivered across the UK.
@@ -104,11 +104,11 @@ export default function TrustedByPage() {
             Partners & Clients
           </p>
           {/* Logo grid — replace with real images */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center opacity-60">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 items-center justify-items-center opacity-60">
             {Array.from({ length: 6 }).map((_, i) => (
               <div
                 key={i}
-                className="h-10 w-28 bg-gray-200 rounded-md animate-pulse"
+                className="h-10 w-full max-w-[7rem] bg-gray-200 rounded-md animate-pulse"
               />
             ))}
           </div>
@@ -132,7 +132,7 @@ export default function TrustedByPage() {
               Every project is different. Every location brings its own planning environment, commercial dynamics and community context — we navigate all of it.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
             {locations.map((loc) => (
               <div
                 key={loc.city}

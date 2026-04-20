@@ -40,7 +40,7 @@ export default function BlogPage() {
               Blog
             </p>
             <h1
-              className="text-5xl lg:text-6xl font-bold text-padel-black mb-4"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Insights from the court.
@@ -100,13 +100,13 @@ export default function BlogPage() {
               </Button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
               {posts.map((post) => (
                 <article
                   key={post.slug}
                   className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-card hover:shadow-card-hover transition-shadow"
                 >
-                  <div className="h-48 bg-baseline-grey" />
+                  <div className="h-36 sm:h-44 md:h-48 bg-baseline-grey" />
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-xs font-semibold text-court-green bg-court-green-light px-2.5 py-1 rounded-full">
