@@ -10,8 +10,9 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/packages", label: "Packages" },
   { href: "/services", label: "Services" },
+  { href: "/courts", label: "Courts" },
   { href: "/trusted-by", label: "Trusted By" },
-  { href: "/blog", label: "Blog" },
+  // { href: "/blog", label: "Blog" }, // hidden until blog posts are ready
   { href: "/contact", label: "Contact" },
 ];
 
@@ -48,14 +49,9 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 flex-shrink-0 min-w-0">
-            <div className="w-8 h-8 bg-court-green rounded-sm flex items-center justify-center flex-shrink-0">
-              <span className="text-white font-bold text-xs" style={{ fontFamily: "var(--font-display)" }}>
-                TPP
-              </span>
-            </div>
+          <Link href="/" className="flex items-center flex-shrink-0 min-w-0">
             <span
-              className="text-padel-black font-semibold text-base hidden sm:block truncate"
+              className="text-padel-black font-semibold text-base truncate"
               style={{ fontFamily: "var(--font-display)" }}
             >
               The Padel Partners

@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CookieBanner from "@/components/layout/CookieBanner";
 import GoogleAnalytics from "@/components/layout/GoogleAnalytics";
+import BotpressChat from "@/components/layout/BotpressChat";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-body",
@@ -70,6 +71,37 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "The Padel Partners",
+  "url": "https://www.thepadelpartners.com",
+  "logo": "https://www.thepadelpartners.com/og-image.jpg",
+  "description": "The UK's specialist strategic consultancy for padel club development. Expert guidance for investors, developers and operators from feasibility through to launch and operations.",
+  "email": "info@thepadelpartners.com",
+  "areaServed": [
+    { "@type": "Country", "name": "United Kingdom" }
+  ],
+  "serviceType": [
+    "Padel Club Development Consultancy",
+    "Padel Feasibility Studies",
+    "Padel Court Supply",
+    "Padel Club Business Planning",
+    "Padel Club Operations Support"
+  ],
+  "knowsAbout": [
+    "Padel club development",
+    "Padel court construction",
+    "Padel club feasibility",
+    "Padel business planning",
+    "Padel club operations",
+    "Padel court supply UK"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/the-padel-partners"
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,12 +109,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ibmPlexSans.variable} h-full scroll-smooth`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col antialiased">
         <GoogleAnalytics />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
         <CookieBanner />
+        <BotpressChat />
       </body>
     </html>
   );

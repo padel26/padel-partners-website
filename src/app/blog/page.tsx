@@ -3,9 +3,9 @@ import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Blog — Padel Club Development Insights",
+  title: "Padel Club Development Blog — Expert Guides, Industry News & Insights",
   description:
-    "Expert insights, guides and updates on padel club development in the UK — from feasibility to operations.",
+    "Practical padel club development guides, financial modelling tips, planning strategies and industry news from The Padel Partners team. Free resources for UK padel projects.",
 };
 
 // Blog posts will be added here — using static data for now
@@ -52,25 +52,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Category filter */}
-      <section className="px-6 lg:px-8 pb-4 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                  cat === "All"
-                    ? "bg-court-green text-white"
-                    : "bg-baseline-grey text-net-silver hover:text-padel-black"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Posts grid */}
       <section className="py-16 px-6 lg:px-8 bg-white">
@@ -141,24 +122,27 @@ export default function BlogPage() {
       {/* Newsletter signup */}
       <section className="py-16 px-6 lg:px-8 bg-baseline-grey">
         <div className="max-w-2xl mx-auto text-center">
+          <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
+            Join our newsletter!
+          </p>
           <h2
             className="text-3xl font-bold text-padel-black mb-3"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Stay informed
+            Stay up to date
           </h2>
           <p className="text-net-silver mb-8">
-            Get development insights, industry news and updates from The Padel Partners — direct to your inbox.
+            Stay up to date with the latest development insights, industry news, trends and updates from The Padel Partners direct to your inbox.
           </p>
-          <form className="flex gap-3 max-w-md mx-auto">
+          <form className="flex flex-col gap-3 max-w-md mx-auto">
             <input
               type="email"
               placeholder="your@email.com"
-              className="flex-1 px-4 py-2.5 rounded-md border border-gray-200 bg-white text-padel-black text-sm placeholder:text-net-silver focus:outline-none focus:ring-2 focus:ring-court-green"
+              className="w-full px-4 py-2.5 rounded-md border border-gray-200 bg-white text-padel-black text-sm placeholder:text-net-silver focus:outline-none focus:ring-2 focus:ring-court-green"
             />
             <button
               type="submit"
-              className="px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+              className="w-full px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
             >
               Subscribe
             </button>

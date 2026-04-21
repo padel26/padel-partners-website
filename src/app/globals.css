@@ -1,18 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --font-display: "Neue Haas Grotesk Display Pro", "Inter", system-ui, sans-serif;
-  --font-body: "IBM Plex Sans", system-ui, sans-serif;
-
-  --color-court-green: #1A6B3A;
+/* ── Tailwind v4 theme tokens ─────────────────────────── */
+@theme {
+  /* Brand colours */
+  --color-court-green:       #1A6B3A;
+  --color-court-green-dark:  #145630;
   --color-court-green-light: #E8F5EE;
-  --color-padel-black: #141414;
-  --color-baseline-grey: #F4F4F2;
-  --color-net-silver: #8C8C8C;
-  --color-turf-gold: #C9A84C;
+  --color-padel-black:       #141414;
+  --color-baseline-grey:     #F4F4F2;
+  --color-net-silver:        #8C8C8C;
+  --color-turf-gold:         #C9A84C;
+
+  /* Fonts */
+  --font-display: "Neue Haas Grotesk Display Pro", "Inter", system-ui, sans-serif;
+  --font-body:    "IBM Plex Sans", system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-card:       0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-card-hover: 0 4px 16px 0 rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.05);
 }
 
-* {
+/* ── Base styles ──────────────────────────────────────── */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -46,3 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-court-green-light);
   color: var(--color-padel-black);
 }
+
+/* Hide scrollbar on category filter */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

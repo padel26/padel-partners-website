@@ -5,6 +5,7 @@ const footerLinks = {
     { href: "/", label: "Home" },
     { href: "/packages", label: "Packages" },
     { href: "/services", label: "Services" },
+    { href: "/courts", label: "Courts" },
     { href: "/trusted-by", label: "Trusted By" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
@@ -13,7 +14,7 @@ const footerLinks = {
     { href: "/services#feasibility", label: "Feasibility" },
     { href: "/services#finance", label: "Finance" },
     { href: "/services#design", label: "Design" },
-    { href: "/services#build", label: "Build & Courts" },
+    { href: "/services#build", label: "Courts & Build" },
     { href: "/services#brand", label: "Brand & Marketing" },
     { href: "/services#operations", label: "Operations" },
   ],
@@ -26,20 +27,17 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-padel-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12">
+
+        {/* Top: brand + nav columns */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-10">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-court-green rounded-sm flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TPP</span>
-              </div>
-              <span className="font-semibold text-white" style={{ fontFamily: "var(--font-display)" }}>
-                The Padel Partners
-              </span>
-            </div>
-            <p className="text-net-silver text-sm leading-relaxed mb-6">
-              Your strategic partner for padel club development. Expert guidance at every stage — from feasibility to launch.
+          <div className="col-span-2 md:col-span-1">
+            <span className="font-semibold text-white block mb-2" style={{ fontFamily: "var(--font-display)" }}>
+              The Padel Partners
+            </span>
+            <p className="text-net-silver text-sm leading-relaxed mb-2">
+              Your strategic partner for padel development.
             </p>
             <a
               href="mailto:info@thepadelpartners.com"
@@ -82,36 +80,38 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+        </div>
 
-          {/* CTA */}
-          <div>
-            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Get Started</h3>
-            <p className="text-sm text-net-silver mb-4">
-              Ready to build your padel club? Talk to our team.
-            </p>
+        {/* Full-width CTA */}
+        <div className="border-t border-white/10 pt-10 mb-10">
+          <h3 className="text-lg font-semibold text-white mb-3" style={{ fontFamily: "var(--font-display)" }}>
+            Ready to start your padel project?
+          </h3>
+          <p className="text-sm text-net-silver leading-relaxed mb-6 max-w-3xl">
+            Our padel club development service gives you ongoing access to an experienced team that can guide and support you through the full journey. We work alongside you as strategic partners, helping you make confident decisions, avoid costly mistakes and move your project forward with clarity.
+          </p>
+          <div className="flex flex-wrap gap-3">
             <a
               href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center min-h-[44px] px-4 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors mb-4"
+              className="inline-flex items-center min-h-[44px] px-4 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
             >
               Book a Call
             </a>
-            <div className="mt-4">
-              <a
-                href="https://portal.thepadelpartners.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-net-silver hover:text-white transition-colors"
-              >
-                Client Portal →
-              </a>
-            </div>
+            <a
+              href="https://portal.thepadelpartners.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center min-h-[44px] px-4 py-2.5 text-sm text-net-silver hover:text-white transition-colors"
+            >
+              Client Portal →
+            </a>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-net-silver">
             © {new Date().getFullYear()} The Padel Partners. All rights reserved.
           </p>

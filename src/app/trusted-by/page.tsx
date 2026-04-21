@@ -1,125 +1,117 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { MapPin, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Trusted By — Clients & Projects",
+  title: "Padel Club Case Studies & Project Portfolio — UK Development Examples",
   description:
-    "The Padel Partners has guided padel club development projects across the UK — from Huddersfield to London, Birmingham to Northern Ireland.",
+    "The Padel Partners has guided padel club development projects across the UK — Wetherby, Sleaford, Wimbledon, Nottingham, Horwich and Kirkby. Developers, public sector and entrepreneurs.",
+  alternates: { canonical: "https://www.thepadelpartners.com/trusted-by" },
 };
 
 const locations = [
   {
-    city: "Huddersfield",
+    city: "Wetherby",
     region: "Yorkshire",
-    description: "Multi-court indoor padel facility development.",
+    description: "Padel and wellness farm.",
   },
   {
-    city: "London",
+    city: "Sleaford",
+    region: "Lincolnshire",
+    description: "Rugby club.",
+  },
+  {
+    city: "Wimbledon",
     region: "Greater London",
-    description: "Premium urban padel club — feasibility through to launch.",
+    description: "Premium indoor facility.",
   },
   {
-    city: "Birmingham",
-    region: "West Midlands",
-    description: "Developer-led padel and leisure complex.",
+    city: "Nottingham",
+    region: "East Midlands",
+    description: "Premium indoor centre.",
   },
   {
-    city: "Cheshire",
-    region: "North West England",
-    description: "Private club development with court supply.",
+    city: "Horwich",
+    region: "Greater Manchester",
+    description: "Premium indoor facility.",
   },
   {
-    city: "Plymouth",
-    region: "South West England",
-    description: "Community padel project with public sector partnership.",
-  },
-  {
-    city: "Blackburn",
-    region: "Lancashire",
-    description: "Leisure centre padel court addition.",
-  },
-  {
-    city: "Northern Ireland",
-    region: "Northern Ireland",
-    description: "Multi-site padel development strategy.",
-  },
-  {
-    city: "Cotswolds",
-    region: "South West England",
-    description: "Premium rural padel destination project.",
+    city: "Kirkby",
+    region: "Merseyside",
+    description: "Leisure trust.",
   },
 ];
 
 const personas = [
   {
+    title: "Padel Entrepreneurs",
+    description:
+      "First-time operators passionate about the sport who need guidance through unfamiliar development and business processes.",
+  },
+  {
     title: "Developers & Investors",
     description:
-      "Private sector clients who see the padel opportunity but need confidence it will stack up commercially. We deliver the feasibility, the business case and the build strategy.",
+      "Private sector clients who see the padel opportunity but need confidence it will stack up commercially.",
   },
   {
     title: "Public Sector Operators",
     description:
-      "Local authorities, leisure trusts and community organisations responding to demand for padel facilities. We handle the grant applications, public sector feasibility and bid writing.",
+      "Local authorities, leisure trusts and community organisations responding to demand for padel facilities.",
   },
   {
     title: "Existing Clubs",
     description:
-      "Tennis clubs, leisure centres and gyms adding padel to their offering. We manage the addition without disrupting existing operations.",
-  },
-  {
-    title: "Padel Entrepreneurs",
-    description:
-      "First-time operators passionate about the sport who need guidance through unfamiliar development and business processes.",
+      "Established padel clubs ready to scale. Whether adding courts, opening new sites or optimising operations, we provide the strategic support to grow with confidence.",
   },
 ];
 
 export default function TrustedByPage() {
   return (
     <>
-      {/* Header */}
-      <section className="pt-32 pb-16 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
-              Trusted By
-            </p>
-            <h1
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Projects delivered across the UK.
-            </h1>
-            <p className="text-xl text-net-silver">
-              From feasibility through to opening day — we have guided padel club development in eight locations and counting.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Client logos placeholder */}
-      <section className="py-12 px-6 lg:px-8 bg-baseline-grey border-y border-gray-100">
+      <section className="pt-24 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-semibold text-net-silver uppercase tracking-widest text-center mb-8">
-            Partners & Clients
-          </p>
-          {/* Logo grid — replace with real images */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 items-center justify-items-center opacity-60">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div
-                key={i}
-                className="h-10 w-full max-w-[7rem] bg-gray-200 rounded-md animate-pulse"
-              />
+          <h1
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-8 text-center"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Trusted By
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            {[
+              { src: "/logos/padel-shed.png", alt: "Padel Shed — padel club development client", invert: false, scale: 1.4 },
+              { src: "/logos/everybody.png", alt: "everybody Health & Leisure — padel facility development client", invert: false, scale: 1 },
+              { src: "/logos/powerhouse-padel.png", alt: "Powerhouse Padel — padel club development client UK", invert: true, scale: 1 },
+              { src: "/logos/clubhouse.png", alt: "Clubhouse Padel Fit Social — padel club development client", invert: true, scale: 1 },
+              { src: "/logos/royal-parks.png", alt: "The Royal Parks — public sector padel development client", invert: false, scale: 1 },
+              { src: "/logos/social-sports-society.png", alt: "Social Sports Society — padel club development client", invert: false, scale: 1 },
+              { src: "/logos/padel-loft.png", alt: "The Padel Loft — padel club development client UK", invert: false, scale: 2.4 },
+              { src: "/logos/lakes-by-yoo.webp", alt: "The Lakes by Yoo — luxury padel club development client", invert: false, scale: 2.0 },
+            ].map(({ src, alt, invert, scale }) => (
+              <div key={alt} className="flex items-center justify-center px-6 py-5">
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={200}
+                  height={80}
+                  className="w-full h-12 object-contain"
+                  style={{
+                    filter: invert
+                      ? "invert(1) grayscale(1) brightness(0.35)"
+                      : "grayscale(1) brightness(0.35)",
+                    mixBlendMode: "multiply",
+                    transform: `scale(${scale})`,
+                  }}
+                />
+              </div>
             ))}
           </div>
-          <p className="text-center text-xs text-net-silver mt-6">
-            Logo images — drop them into chat to add real partner logos
-          </p>
         </div>
       </section>
 
       {/* Locations */}
-      <section className="py-20 px-6 lg:px-8 bg-white">
+      <section className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey hidden">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-12">
             <h2
@@ -129,14 +121,14 @@ export default function TrustedByPage() {
               Active project locations
             </h2>
             <p className="text-net-silver">
-              Every project is different. Every location brings its own planning environment, commercial dynamics and community context — we navigate all of it.
+              Every project is different. Every location brings its own commercial dynamics and community context we navigate all of it.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
             {locations.map((loc) => (
               <div
                 key={loc.city}
-                className="bg-baseline-grey rounded-xl p-6 border border-gray-100"
+                className="bg-white rounded-xl p-6 border border-gray-100 shadow-card"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin size={16} className="text-court-green flex-shrink-0" />
@@ -156,7 +148,7 @@ export default function TrustedByPage() {
       </section>
 
       {/* Who we work with */}
-      <section className="py-20 px-6 lg:px-8 bg-baseline-grey">
+      <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-12">
             <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
@@ -173,7 +165,7 @@ export default function TrustedByPage() {
             {personas.map((p) => (
               <div
                 key={p.title}
-                className="bg-white rounded-xl p-7 border border-gray-100 shadow-card"
+                className="bg-baseline-grey rounded-xl p-7 border border-gray-100"
               >
                 <h3
                   className="text-xl font-bold text-padel-black mb-3"
@@ -189,24 +181,24 @@ export default function TrustedByPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 lg:px-8 bg-padel-black">
+      <section className="pt-10 pb-10 px-6 lg:px-8 bg-padel-black">
         <div className="max-w-3xl mx-auto text-center">
           <h2
-            className="text-4xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Add your project to the list.
           </h2>
           <p className="text-white/60 mb-8">
-            Book a free call to discuss your project. We will tell you exactly how we can help.
+            Tell us about your project.<br />We&apos;ll tell you exactly how we can help.
           </p>
           <Button
             href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
             external
-            size="lg"
+            size="md"
             variant="primary"
           >
-            Book a Free Call
+            Book a Call
             <ArrowRight size={16} />
           </Button>
         </div>
