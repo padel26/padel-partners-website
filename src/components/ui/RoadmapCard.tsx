@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-type GateStyle = "green" | "gold" | "dark";
-
 interface Phase {
   number: string;
   index: number;
@@ -12,14 +10,8 @@ interface Phase {
   dotStyle: "green" | "gold" | "dark";
   description: string;
   milestones: string[];
-  gate: { label: string; style: GateStyle } | null;
+  gate: null | { label: string; style: string };
 }
-
-const gateStyles: Record<GateStyle, string> = {
-  green: "bg-[#E8F5EE] text-[#1A6B3A]",
-  gold: "bg-[#FBF4E3] text-[#8B6914]",
-  dark: "bg-[#EBEBEB] text-[#141414]",
-};
 
 const dotStyles: Record<"green" | "gold" | "dark", string> = {
   green: "bg-court-green",
@@ -31,7 +23,10 @@ export default function RoadmapCard({ phase }: { phase: Phase }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div id={`phase-${phase.number}`} className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm flex flex-col h-full mx-1 lg:mx-2 scroll-mt-20">
+    <div
+      id={`phase-${phase.number}`}
+      className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm flex flex-col h-full mx-1 lg:mx-2 scroll-mt-20"
+    >
       {/* Header */}
       <div className="flex items-start gap-3 mb-4">
         <div
@@ -67,7 +62,7 @@ export default function RoadmapCard({ phase }: { phase: Phase }) {
 
       {/* Milestones — hidden until expanded */}
       {expanded && (
-        <ul className="space-y-0 mb-3">
+        <ul className="space-y-0">
           {phase.milestones.map((m) => (
             <li
               key={m}
@@ -81,7 +76,6 @@ export default function RoadmapCard({ phase }: { phase: Phase }) {
           ))}
         </ul>
       )}
-
     </div>
   );
 }
