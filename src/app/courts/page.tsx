@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
@@ -15,6 +16,7 @@ const courts = [
     tag: "Premier",
     highlight: false,
     type: "Panoramic",
+    image: "/courts-sx1.avif",
     description: "Unparalleled cleanliness and elegance. Panoramic construction with seamless glass integration for an unblemished player and spectator experience.",
     features: [
       "Panoramic structure",
@@ -32,6 +34,7 @@ const courts = [
     tag: "Flagship",
     highlight: true,
     type: "Panoramic",
+    image: "/courts-tpl-pro.avif",
     description: "Our flagship court. A revolutionary design approach that establishes a new benchmark in padel aesthetics, performance and customisation.",
     features: [
       "Revolutionary design benchmark",
@@ -49,6 +52,7 @@ const courts = [
     tag: "Super Panoramic",
     highlight: false,
     type: "Super Panoramic",
+    image: "/courts-vx360.avif",
     description: "Redefines competition standards. The market's lightest padel court, combining elite performance with a full super panoramic design.",
     features: [
       "Market's lightest padel court",
@@ -96,11 +100,15 @@ export default function CourtsPage() {
                   : "border border-gray-200 shadow-card"
               }`}
             >
-              {/* Image placeholder */}
-              <div className="w-full h-48 rounded-xl mb-5 flex items-center justify-center bg-baseline-grey">
-                <span className="text-xs font-medium text-net-silver">
-                  {court.name} image
-                </span>
+              {/* Court image */}
+              <div className="w-full h-48 rounded-xl mb-5 overflow-hidden bg-baseline-grey">
+                <Image
+                  src={court.image}
+                  alt={`${court.name} padel court — ${court.type}`}
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {court.tag ? (
@@ -178,11 +186,14 @@ export default function CourtsPage() {
             </Button>
           </div>
           {/* Image */}
-          <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden border border-gray-200 bg-white flex items-center justify-center" style={{ minHeight: 320 }}>
-            <div className="text-center py-16 px-8">
-              <p className="text-sm font-medium text-net-silver">Smart technology image coming soon</p>
-              <p className="text-xs text-net-silver mt-1">Drop an image into chat to add it here</p>
-            </div>
+          <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden border border-gray-200">
+            <Image
+              src="/courts-smart-tech.avif"
+              alt="Smart padel court technology — automated scoreboards, cameras and remote lighting"
+              width={800}
+              height={560}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
