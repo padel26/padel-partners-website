@@ -5,6 +5,7 @@ const footerLinks = {
     { href: "/", label: "Home", hideOnMobile: false },
     { href: "/packages", label: "Packages", hideOnMobile: false },
     { href: "/services", label: "Services", hideOnMobile: false },
+    { href: "/roadmap", label: "Roadmap", hideOnMobile: false },
     { href: "/courts", label: "Courts", hideOnMobile: false },
     { href: "/trusted-by", label: "Trusted By", hideOnMobile: false },
     { href: "/blog", label: "Blog", hideOnMobile: true, hidden: true },
