@@ -322,7 +322,7 @@ export default function RoadmapPage() {
             From concept to court
           </h1>
           <p className="text-xl text-net-silver max-w-2xl mx-auto">
-            A structured 12-phase framework covering every stage of padel club development — from initial idea through to a fully operational and growing club.
+            Our structured 12-phase framework covers every stage of padel club development from initial idea through to a fully operational and growing club.
           </p>
         </div>
       </section>
