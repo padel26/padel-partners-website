@@ -172,6 +172,8 @@ export default function Home() {
               alt="Indoor padel club facility architectural render — padel court development UK"
               width={900}
               height={600}
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-auto scale-110"
               style={{ filter: "hue-rotate(-80deg) saturate(0.35)" }}
             />
