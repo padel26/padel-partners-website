@@ -105,7 +105,7 @@ export default function CourtsPage() {
               <div className="w-full h-48 rounded-xl mb-5 overflow-hidden bg-baseline-grey">
                 <Image
                   src={court.image}
-                  alt={`${court.name} padel court — ${court.type}`}
+                  alt={`${court.name} ${court.type.toLowerCase()} padel court — premium padel court supply and installation UK`}
                   width={600}
                   height={400}
                   className="w-full h-full object-cover"
@@ -191,7 +191,7 @@ export default function CourtsPage() {
           <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden border border-gray-200">
             <Image
               src="/courts-smart-tech.avif"
-              alt="Smart padel court technology — automated scoreboards, cameras and remote lighting"
+              alt="Smart padel court technology UK — automated scoreboards, in-built cameras, remote lighting and booking system integration"
               width={800}
               height={560}
               className="w-full h-full object-cover"
