@@ -205,6 +205,19 @@ export default function Home() {
             </p>
           </div>
 
+          {/* Roadmap intro */}
+          <div className="mb-6">
+            <h3
+              className="text-xl sm:text-2xl font-bold text-padel-black mb-2"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Padel Club Roadmap
+            </h3>
+            <p className="text-net-silver text-base max-w-2xl">
+              Our structured 12-phase framework covers every stage of padel club development from initial idea through to a fully operational and growing club.
+            </p>
+          </div>
+
           {/* 12-phase cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {journeySteps.map((step, i) => (
