@@ -5,9 +5,9 @@ import ServiceCard from "@/components/ui/ServiceCard";
 import ServiceNav from "@/components/ui/ServiceNav";
 
 export const metadata: Metadata = {
-  title: "Padel Club Development Services — Expert Consultancy & Specialist Support",
+  title: "Padel Club Development Services UK — Expert Support",
   description:
-    "Expert padel club development services across feasibility, finance, planning, design, build, branding and operations. Fixed-price and quote-based services for every stage of your project.",
+    "Padel club development services covering feasibility, planning, finance, design, build, branding and operations. Fixed-price and quote-based options available.",
   alternates: { canonical: "https://www.thepadelpartners.com/services" },
 };
 

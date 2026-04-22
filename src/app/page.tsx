@@ -8,7 +8,7 @@ import PackagesExpand from "@/components/ui/PackagesExpand";
 export const metadata: Metadata = {
   title: "The Padel Partners — Padel Club Development Consultancy UK",
   description:
-    "The UK's specialist padel club development consultancy. We guide investors, developers and operators from feasibility and planning through to launch and operations — faster, smarter and with fewer costly mistakes.",
+    "The UK's padel club development consultancy. Expert guidance for investors, developers and operators from feasibility and planning through to launch and operations.",
   alternates: { canonical: "https://www.thepadelpartners.com" },
 };
 

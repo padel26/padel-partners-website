@@ -79,6 +79,12 @@ const organizationSchema = {
   "logo": "https://www.thepadelpartners.com/og-image.jpg",
   "description": "The UK's specialist strategic consultancy for padel club development. Expert guidance for investors, developers and operators from feasibility through to launch and operations.",
   "email": "info@thepadelpartners.com",
+  "telephone": "+44-800-000-0000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "GB",
+    "addressRegion": "England"
+  },
   "areaServed": [
     { "@type": "Country", "name": "United Kingdom" }
   ],

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Padel Club Development Blog — Expert Guides, Industry News & Insights",
   description:
     "Practical padel club development guides, financial modelling tips, planning strategies and industry news from The Padel Partners team. Free resources for UK padel projects.",
+  robots: { index: false, follow: false },
 };
 
 // Blog posts will be added here — using static data for now

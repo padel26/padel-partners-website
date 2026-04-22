@@ -3,9 +3,9 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Padel Club Consultancy Packages — Monthly Expert Support from £199/month",
+  title: "Padel Club Consultancy Packages — From £199/month",
   description:
-    "Six padel club development consultancy packages from £199/month. From early-stage feasibility to embedded strategic support — expert guidance matched to your project stage and ambition.",
+    "Six padel club consultancy packages from £199/month — from early-stage guidance to embedded strategic support matched to your project stage and ambition.",
   alternates: { canonical: "https://www.thepadelpartners.com/packages" },
 };
 

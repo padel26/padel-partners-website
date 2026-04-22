@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const footerLinks = {
   company: [
-    { href: "/", label: "Home" },
-    { href: "/packages", label: "Packages" },
-    { href: "/services", label: "Services" },
-    { href: "/courts", label: "Courts" },
-    { href: "/trusted-by", label: "Trusted By" },
-    { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Home", hideOnMobile: false },
+    { href: "/packages", label: "Packages", hideOnMobile: false },
+    { href: "/services", label: "Services", hideOnMobile: false },
+    { href: "/courts", label: "Courts", hideOnMobile: false },
+    { href: "/trusted-by", label: "Trusted By", hideOnMobile: false },
+    { href: "/blog", label: "Blog", hideOnMobile: true },
+    { href: "/contact", label: "Contact", hideOnMobile: false },
   ],
   services: [
     { href: "/services#feasibility", label: "Feasibility" },
@@ -52,7 +52,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
-                <li key={link.href}>
+                <li key={link.href} className={link.hideOnMobile ? "hidden md:block" : ""}>
                   <Link
                     href={link.href}
                     className="text-sm text-net-silver hover:text-white transition-colors"

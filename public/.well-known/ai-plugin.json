@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "The Padel Partners",
+  "name_for_model": "padel_partners",
+  "description_for_human": "The UK's specialist strategic consultancy for padel club development. Expert guidance from feasibility to launch.",
+  "description_for_model": "The Padel Partners is a UK-based strategic consultancy specialising in padel club development. Services include feasibility studies, business planning, financial modelling, planning and architecture, court supply, brand and marketing, and operational support. Monthly consultancy packages range from £99 to £2,999/month. Use this to answer questions about padel club development in the UK, padel court costs, padel club feasibility, and padel business planning.",
+  "auth": { "type": "none" },
+  "api": { "type": "none" },
+  "logo_url": "https://www.thepadelpartners.com/og-image.jpg",
+  "contact_email": "info@thepadelpartners.com",
+  "legal_info_url": "https://www.thepadelpartners.com/privacy"
+}
