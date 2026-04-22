@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
+import RoadmapCard from "@/components/ui/RoadmapCard";
 
 export const metadata: Metadata = {
   title: "Padel Club Development Roadmap — 12 Phases | The Padel Partners",
@@ -229,75 +230,6 @@ const phases: Phase[] = [
   },
 ];
 
-const gateStyles: Record<GateStyle, string> = {
-  green: "bg-[#E8F5EE] text-[#1A6B3A]",
-  gold: "bg-[#FBF4E3] text-[#8B6914]",
-  dark: "bg-[#EBEBEB] text-[#141414]",
-};
-
-const dotStyles: Record<"green" | "gold" | "dark", string> = {
-  green: "bg-court-green",
-  gold: "bg-[#C9A84C]",
-  dark: "bg-net-silver",
-};
-
-function PhaseCard({ phase }: { phase: Phase }) {
-  return (
-    <div className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm flex flex-col h-full mx-1 lg:mx-2">
-      {/* Header */}
-      <div className="flex items-start gap-3 mb-4">
-        <div
-          className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold flex-shrink-0"
-          style={{ backgroundColor: phase.bubbleColor }}
-        >
-          {phase.number}
-        </div>
-        <div className="pt-0.5">
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-net-silver mb-0.5">
-            Phase {phase.number}
-          </p>
-          <h3
-            className="text-base font-semibold text-padel-black leading-tight"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {phase.title}
-          </h3>
-        </div>
-      </div>
-
-      <div className="h-px bg-gray-100 mb-3" />
-
-      <p className="text-sm text-[#4A4A4A] leading-relaxed mb-3">
-        {phase.description}
-      </p>
-
-      <ul className="space-y-0 flex-1">
-        {phase.milestones.map((m) => (
-          <li
-            key={m}
-            className="flex items-start gap-2.5 py-1.5 border-b border-gray-50 last:border-0 text-xs text-padel-black leading-snug"
-          >
-            <span
-              className={`w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 ${dotStyles[phase.dotStyle]}`}
-            />
-            {m}
-          </li>
-        ))}
-      </ul>
-
-      {phase.gate && (
-        <div className="mt-3">
-          <span
-            className={`inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full ${gateStyles[phase.gate.style]}`}
-          >
-            {phase.gate.label}
-          </span>
-        </div>
-      )}
-    </div>
-  );
-}
-
 // Groups of 3 phases for the snake rows
 const rows = [
   { phases: phases.slice(0, 3), direction: "ltr" as const },
@@ -352,14 +284,14 @@ export default function RoadmapPage() {
         </div>
       </section>
 
-      {/* Snake grid — desktop */}
+      {/* Snake grid */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey">
         <div className="max-w-7xl mx-auto">
 
           {/* Mobile: simple vertical list */}
           <div className="lg:hidden space-y-4">
             {phases.map((phase) => (
-              <PhaseCard key={phase.number} phase={phase} />
+              <RoadmapCard key={phase.number} phase={phase} />
             ))}
           </div>
 
@@ -367,7 +299,6 @@ export default function RoadmapPage() {
           <div className="hidden lg:block">
             {rows.map((row, rowIdx) => (
               <div key={rowIdx}>
-                {/* Row */}
                 <div
                   className="grid grid-cols-3"
                   style={row.direction === "rtl" ? { direction: "rtl" } : undefined}
@@ -378,7 +309,7 @@ export default function RoadmapPage() {
                       className="py-3"
                       style={row.direction === "rtl" ? { direction: "ltr" } : undefined}
                     >
-                      <PhaseCard phase={phase} />
+                      <RoadmapCard phase={phase} />
                     </div>
                   ))}
                 </div>
