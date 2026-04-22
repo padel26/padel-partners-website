@@ -345,6 +345,95 @@ export default function RoadmapPage() {
         </div>
       </section>
 
+      {/* Portal sell section */}
+      <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl mb-10">
+            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
+              Client Portal
+            </p>
+            <h2
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-padel-black mb-4"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Your personalised roadmap, managed for you.
+            </h2>
+            <p className="text-lg text-net-silver">
+              Every package includes access to your own client portal — a live dashboard that tracks your progress through all 240 milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                title: "240 Milestone Tracker",
+                description:
+                  "Your personalised project roadmap tracks progress through every milestone across all 12 phases — so you always know exactly where you are and what comes next.",
+              },
+              {
+                title: "Resource Library",
+                description:
+                  "An extensive library of frameworks, templates and guides aligned to each phase — free to access and built specifically for padel club development.",
+              },
+              {
+                title: "Call Reports",
+                description:
+                  "Every strategy call and check-in is followed by a structured report, capturing decisions made, actions agreed and next steps — all stored in your portal.",
+              },
+              {
+                title: "Priority Task Tracker",
+                description:
+                  "A live action list populated by your advisor after every call and review, so nothing slips through the cracks and accountability stays sharp.",
+              },
+              {
+                title: "Brain Dump",
+                description:
+                  "Capture thoughts, questions and ideas at any time and send them directly to your advisor — reviewed and incorporated into your strategy at the next session.",
+              },
+              {
+                title: "One Partner. Every Phase.",
+                description:
+                  "From your first feasibility question to opening day and beyond, your portal grows with your project — a single, structured record of your entire development journey.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-baseline-grey rounded-2xl p-6 border border-gray-100"
+              >
+                <div className="w-2 h-2 rounded-full bg-court-green mb-4" />
+                <h3
+                  className="font-bold text-padel-black mb-2"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-sm text-net-silver leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="/packages"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+            >
+              View Packages
+              <ArrowRight size={15} />
+            </a>
+            <a
+              href="https://portal.thepadelpartners.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-net-silver hover:text-padel-black transition-colors"
+            >
+              Client Portal →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-padel-black">
         <div className="max-w-3xl mx-auto text-center">
