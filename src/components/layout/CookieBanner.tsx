@@ -35,7 +35,7 @@ export default function CookieBanner() {
             We use cookies to improve your experience and analyse site traffic.
             By accepting, you consent to our use of cookies.{" "}
             <a href="/privacy" className="text-court-green hover:underline">
-              Learn more
+              Read our privacy policy
             </a>
           </p>
         </div>
