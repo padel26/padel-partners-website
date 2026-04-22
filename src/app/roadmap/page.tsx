@@ -359,7 +359,7 @@ export default function RoadmapPage() {
               Your personalised roadmap, managed for you.
             </h2>
             <p className="text-lg text-net-silver">
-              Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 240 milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
+              Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 490 milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
             </p>
           </div>
 
