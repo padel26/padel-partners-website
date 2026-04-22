@@ -353,7 +353,7 @@ export default function RoadmapPage() {
       </section>
 
       {/* Snake grid — desktop */}
-      <section className="pb-10 px-6 lg:px-8 bg-baseline-grey">
+      <section className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey">
         <div className="max-w-7xl mx-auto">
 
           {/* Mobile: simple vertical list */}
