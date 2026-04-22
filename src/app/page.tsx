@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, MapPin, CornerDownLeft } from "lucide-react";
+import { ArrowRight, CheckCircle2, MapPin } from "lucide-react";
 import Button from "@/components/ui/Button";
 import PackagesExpand from "@/components/ui/PackagesExpand";
 
@@ -205,46 +205,24 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Journey steps — desktop: two rows of 6 with arrows */}
-          <div className="hidden lg:block space-y-4">
-            {/* Row 1 */}
-            <div className="flex items-center gap-2">
-              {journeySteps.slice(0, 6).map((step, i) => (
-                <div key={step} className="flex items-center gap-2">
-                  <div className="flex items-center gap-2.5 px-4 py-2.5 bg-baseline-grey rounded-lg border border-gray-100">
-                    <span className="text-xs font-bold text-court-green tabular-nums">{String(i + 1).padStart(2, "0")}</span>
-                    <span className="text-sm font-semibold text-padel-black whitespace-nowrap">{step}</span>
-                  </div>
-                  {i < 5 && <ArrowRight size={14} className="text-gray-300 flex-shrink-0" />}
-                </div>
-              ))}
-              <CornerDownLeft size={16} className="text-gray-300 flex-shrink-0 ml-1" />
-            </div>
-            {/* Row 2 */}
-            <div className="flex items-center gap-2">
-              {journeySteps.slice(6).map((step, i) => (
-                <div key={step} className="flex items-center gap-2">
-                  <div className="flex items-center gap-2.5 px-4 py-2.5 bg-baseline-grey rounded-lg border border-gray-100">
-                    <span className="text-xs font-bold text-court-green tabular-nums">{String(i + 7).padStart(2, "0")}</span>
-                    <span className="text-sm font-semibold text-padel-black whitespace-nowrap">{step}</span>
-                  </div>
-                  {i < 5 && <ArrowRight size={14} className="text-gray-300 flex-shrink-0" />}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Journey steps — mobile: 2-column grid */}
-          <div className="lg:hidden grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {/* 12-phase cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {journeySteps.map((step, i) => (
-              <div key={step} className="flex items-center gap-2.5 px-3 py-2.5 bg-baseline-grey rounded-lg border border-gray-100">
-                <span className="text-xs font-bold text-court-green tabular-nums">{String(i + 1).padStart(2, "0")}</span>
-                <span className="text-sm font-medium text-padel-black">{step}</span>
+              <div
+                key={step}
+                className="flex items-center gap-3 px-4 py-4 bg-white rounded-2xl border border-gray-100 shadow-sm"
+              >
+                <span className="text-sm font-bold text-court-green tabular-nums flex-shrink-0">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-sm font-semibold text-padel-black leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+                  {step}
+                </span>
               </div>
             ))}
           </div>
 
-          <div className="mt-4">
+          <div className="mt-6">
             <a
               href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
               target="_blank"
