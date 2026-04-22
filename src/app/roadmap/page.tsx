@@ -359,14 +359,14 @@ export default function RoadmapPage() {
               Your personalised roadmap, managed for you.
             </h2>
             <p className="text-lg text-net-silver">
-              Every package includes access to your own client portal — a live dashboard that tracks your progress through all 240 milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
+              Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 240 milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               {
-                title: "240 Milestone Tracker",
+                title: "Milestone Tracker",
                 description:
                   "Your personalised project roadmap tracks progress through every milestone across all 12 phases — so you always know exactly where you are and what comes next.",
               },
@@ -400,7 +400,6 @@ export default function RoadmapPage() {
                 key={item.title}
                 className="bg-baseline-grey rounded-2xl p-6 border border-gray-100"
               >
-                <div className="w-2 h-2 rounded-full bg-court-green mb-4" />
                 <h3
                   className="font-bold text-padel-black mb-2"
                   style={{ fontFamily: "var(--font-display)" }}
