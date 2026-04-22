@@ -236,17 +236,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-6">
-            <a
-              href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-4 py-2.5 bg-court-green rounded-lg text-white text-sm font-semibold whitespace-nowrap hover:bg-court-green-dark transition-colors"
-            >
-              Book a Call
-              <ArrowRight size={14} />
-            </a>
-          </div>
         </div>
       </section>
 

@@ -368,17 +368,17 @@ export default function RoadmapPage() {
               {
                 title: "Milestone Tracker",
                 description:
-                  "Your personalised project roadmap tracks progress through every milestone across all 12 phases — so you always know exactly where you are and what comes next.",
+                  "Your personalised project roadmap tracks progress through every milestone across all 12 phases, so you always know exactly where you are and what comes next.",
               },
               {
                 title: "Resource Library",
                 description:
-                  "An extensive library of frameworks, templates and guides aligned to each phase — free to access and built specifically for padel club development.",
+                  "An extensive library of frameworks, templates and guides aligned to each phase, free to access and built specifically for padel club development.",
               },
               {
                 title: "Call Reports",
                 description:
-                  "Every strategy call and check-in is followed by a structured report, capturing decisions made, actions agreed and next steps — all stored in your portal.",
+                  "Every strategy call, meeting and check-in is followed by a structured report, capturing decisions made, actions agreed and next steps, all stored in your portal.",
               },
               {
                 title: "Priority Task Tracker",
@@ -388,12 +388,12 @@ export default function RoadmapPage() {
               {
                 title: "Brain Dump",
                 description:
-                  "Capture thoughts, questions and ideas at any time and send them directly to your advisor — reviewed and incorporated into your strategy at the next session.",
+                  "Capture thoughts, questions and ideas at any time and send them directly to your advisor, reviewed and incorporated into your strategy at the next session.",
               },
               {
                 title: "One Partner. Every Phase.",
                 description:
-                  "From your first feasibility question to opening day and beyond, your portal grows with your project — a single, structured record of your entire development journey.",
+                  "From your first feasibility question to opening day and beyond, your portal grows with your project, a single, structured record of your entire development journey.",
               },
             ].map((item) => (
               <div
