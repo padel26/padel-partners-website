@@ -208,12 +208,12 @@ export default function Home() {
           {/* Roadmap intro */}
           <div className="mb-6">
             <h3
-              className="text-xl sm:text-2xl font-bold text-padel-black mb-2"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Padel Club Roadmap
             </h3>
-            <p className="text-net-silver text-base max-w-2xl">
+            <p className="text-lg text-net-silver max-w-2xl">
               Our structured 12-phase framework covers every stage of padel club development from initial idea through to a fully operational and growing club.
             </p>
           </div>
