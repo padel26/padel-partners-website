@@ -31,7 +31,7 @@ export default function RoadmapCard({ phase }: { phase: Phase }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm flex flex-col h-full mx-1 lg:mx-2">
+    <div id={`phase-${phase.number}`} className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm flex flex-col h-full mx-1 lg:mx-2 scroll-mt-20">
       {/* Header */}
       <div className="flex items-start gap-3 mb-4">
         <div

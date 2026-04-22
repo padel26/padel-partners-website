@@ -221,17 +221,18 @@ export default function Home() {
           {/* 12-phase cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {journeySteps.map((step, i) => (
-              <div
+              <Link
                 key={step}
-                className="flex items-center gap-3 px-4 py-4 bg-white rounded-2xl border border-gray-100 shadow-sm"
+                href={`/roadmap#phase-${String(i + 1).padStart(2, "0")}`}
+                className="flex items-center gap-3 px-4 py-4 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-court-green hover:shadow-md transition-all group"
               >
                 <span className="text-sm font-bold text-court-green tabular-nums flex-shrink-0">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="text-sm font-semibold text-padel-black leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+                <span className="text-sm font-semibold text-padel-black leading-tight group-hover:text-court-green transition-colors" style={{ fontFamily: "var(--font-display)" }}>
                   {step}
                 </span>
-              </div>
+              </Link>
             ))}
           </div>
 
