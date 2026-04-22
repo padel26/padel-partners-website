@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Padel Courts UK — Premium Courts Delivered & Installed | The Padel Partners",
   description:
-    "Premium padel courts delivered and installed across the UK. Classic, panoramic and super panoramic configurations from our exclusive Spanish manufacturer — over 3,000 projects globally.",
+    "Premium padel courts delivered and installed across the UK. Classic, panoramic and super panoramic configurations from our exclusive Spanish manufacturer with over 3,000 projects globally.",
   alternates: { canonical: "https://www.thepadelpartners.com/courts" },
 };
 
@@ -81,7 +81,7 @@ export default function CourtsPage() {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Premium padel courts
+            Premium padel courts UK
           </h1>
           <p className="text-xl text-net-silver max-w-2xl mx-auto">
             We have an exclusive supply partnership with a premium Spanish manufacturer behind over 3,000 padel projects globally. We offer three court options fully customizable, delivered and installed in the UK.

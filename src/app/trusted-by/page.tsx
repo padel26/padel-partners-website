@@ -76,7 +76,7 @@ export default function TrustedByPage() {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-8 text-center"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Trusted By
+            Padel Club Case Studies & Portfolio
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[

@@ -251,7 +251,7 @@ export default function RoadmapPage() {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            From concept to court
+            Padel Club Development Roadmap
           </h1>
           <p className="text-xl text-net-silver max-w-2xl mx-auto">
             Our structured 12-phase framework covers every stage of padel club development from initial idea through to a fully operational and growing club.

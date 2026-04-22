@@ -92,7 +92,7 @@ function ContactForm() {
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Let&apos;s talk.
+              Contact The Padel Partners
             </h1>
             <p className="text-xl text-net-silver">
               Ready to speak with one of our padel club development specialists? Submit an enquiry and we will structure a path forward, whether you have a specific project in mind or just want to understand the process.
