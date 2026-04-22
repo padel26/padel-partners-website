@@ -36,9 +36,11 @@ const packages = [
       "Client Portal Access",
       "1 monthly strategy call",
       "Weekly check-in call",
-      "Email support",
+      "Ongoing email support",
       "Extensive Resource library",
       "Introductions to trusted specialists",
+      "Private community access",
+      "Access to bolt-on services",
     ],
   },
   {
@@ -57,6 +59,8 @@ const packages = [
       "Extensive Resource library",
       "Access to trusted specialists",
       "Priority support",
+      "Private community access",
+      "Preferential rates on services",
     ],
   },
   {
@@ -76,6 +80,8 @@ const packages = [
       "Attendance at key meetings",
       "Coordination of trusted specialists",
       "Extensive Resource library",
+      "Private community access",
+      "Best available rates on services",
     ],
   },
 ];
@@ -124,7 +130,7 @@ export default function Home() {
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Your strategic partner for padel club development.
+              Your strategic partner<br className="hidden lg:block" /> for padel club development.
             </h1>
             <p className="text-lg text-net-silver leading-relaxed mb-10 max-w-2xl lg:max-w-[700px]">
               We help our clients in both the private and public sector bring their padel projects to life with expert guidance, trusted specialists and structured support at every stage.
@@ -159,7 +165,7 @@ export default function Home() {
               className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Expert guidance.<br className="lg:hidden" /> Every stage.
+              Expert guidance.<br /> Every stage.
             </h2>
             <p className="text-lg text-net-silver">
               Our team brings clarity, structure and expertise to padel club development projects. Whether you&apos;re exploring the feasibility of a project, navigating planning, buying courts, or gearing up for launch, we provide the strategic support and the specialist connections you need to succeed.
@@ -377,7 +383,7 @@ export default function Home() {
             </Button>
           </div>
           {/* Image */}
-          <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden border border-gray-200 lg:max-h-[340px]">
+          <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden border border-gray-200">
             <Image
               src="/courts-aerial.webp"
               alt="Aerial view of floodlit padel courts at night — premium padel court supply and installation UK"

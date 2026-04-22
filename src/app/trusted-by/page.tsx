@@ -187,7 +187,7 @@ export default function TrustedByPage() {
             className="text-3xl sm:text-4xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Add your project to the list.
+            Add your project<br className="sm:hidden" /> to the list.
           </h2>
           <p className="text-white/60 mb-8">
             Tell us about your project.<br />We&apos;ll tell you exactly how we can help.

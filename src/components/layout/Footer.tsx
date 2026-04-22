@@ -7,7 +7,7 @@ const footerLinks = {
     { href: "/services", label: "Services", hideOnMobile: false },
     { href: "/courts", label: "Courts", hideOnMobile: false },
     { href: "/trusted-by", label: "Trusted By", hideOnMobile: false },
-    { href: "/blog", label: "Blog", hideOnMobile: true },
+    { href: "/blog", label: "Blog", hideOnMobile: true, hidden: true },
     { href: "/contact", label: "Contact", hideOnMobile: false },
   ],
   services: [
@@ -51,8 +51,8 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Company</h3>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.href} className={link.hideOnMobile ? "hidden md:block" : ""}>
+              {footerLinks.company.filter(link => !link.hidden).map((link) => (
+                <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-net-silver hover:text-white transition-colors"

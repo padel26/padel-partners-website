@@ -42,7 +42,7 @@ const faqSchema = {
       "name": "What happens after I subscribe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You will receive a welcome email containing your welcome pack with all your onboarding information, portal access, and a link to book your first strategy call."
+        "text": "You'll receive a welcome email with your onboarding pack, portal access, and a link to book your first strategy call."
       }
     }
   ]
@@ -59,13 +59,14 @@ const packages = [
     description: "Early-stage projects needing light guidance and direction.",
     stripePriceId: "price_1TOXdR2LieSj9bWv16kWJe8U",
     features: [
+      "Client Portal Access",
       "1 monthly strategy call",
       "1 weekly check-in call",
       "Ongoing email support",
       "Access to exclusive resource library",
       "Private community access",
       "Introductions to industry experts",
-      "Preferential rates on bolt-on services",
+      "Access to bolt-on services",
     ],
   },
   {
@@ -86,7 +87,7 @@ const packages = [
       "Private community access",
       "Introductions to trusted industry experts",
       "Priority support",
-      "Preferential rates on bolt-on services",
+      "Preferential rates on services",
     ],
   },
   {
@@ -99,6 +100,7 @@ const packages = [
     description: "Embedded expert support across all project decisions.",
     stripePriceId: "price_1TOXin2LieSj9bWvULx0KZ7W",
     features: [
+      "Client Portal Access",
       "1 weekly strategy call",
       "1 weekly check-in call",
       "Priority email, WhatsApp & phone",
@@ -107,7 +109,8 @@ const packages = [
       "Attendance at selected key meetings",
       "Specialist partner coordination",
       "Access to exclusive resource library",
-      "Best available rates on bolt-on services",
+      "Private community access",
+      "Best available rates on services",
     ],
   },
   {
@@ -147,7 +150,9 @@ const packages = [
       "Site opportunity review",
       "Commercial decision-making support",
       "Access to exclusive resource library",
+      "Private community access",
       "Priority support",
+      "Best available rates on services",
     ],
   },
   {
@@ -168,7 +173,8 @@ const packages = [
       "Attendance at selected key meetings",
       "Specialist partner coordination",
       "Access to exclusive resource library",
-      "Best available rates on bolt-on services",
+      "Private community access",
+      "Best available rates on services",
     ],
   },
 ];
@@ -188,7 +194,7 @@ const faqs = [
   },
   {
     q: "What happens after I subscribe?",
-    a: "You will receive a welcome email containing your welcome pack with all your onboarding information, portal access, and a link to book your first strategy call.",
+    a: "You'll receive a welcome email with your onboarding pack, portal access, and a link to book your first strategy call.",
   },
 ];
 
@@ -230,11 +236,10 @@ export default function PackagesPage() {
               }`}
             >
               {pkg.tag && (
-                <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4 w-fit bg-court-green-light text-court-green">
+                <span className="absolute top-5 right-5 text-xs font-semibold px-2.5 py-1 rounded-full bg-court-green-light text-court-green">
                   {pkg.tag}
                 </span>
               )}
-              {!pkg.tag && <div className="mb-9" />}
 
               <h2
                 className="text-2xl font-bold mb-1 text-padel-black"
@@ -352,7 +357,7 @@ export default function PackagesPage() {
             Not sure which package is right?
           </h2>
           <p className="text-white/60 mb-8">
-            Book a 30-minute call. We will help you figure out exactly what level of support your project needs.
+            Book a 15-minute call.<br />We will help you figure out exactly what level of support your project needs.
           </p>
           <Button
             href="https://calendar.app.google/YGnWn5mJxVCL8Q648"

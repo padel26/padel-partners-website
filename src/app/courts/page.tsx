@@ -203,7 +203,7 @@ export default function CourtsPage() {
               Courts are just the start. We coordinate every element of the build from the ground up.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-stretch">
             {[
               {
                 title: "Foundations & Court Bases",
@@ -218,7 +218,7 @@ export default function CourtsPage() {
                 description: "Prefabricated club houses, and full interior fit-outs; coffee shops, bars, changing rooms, wellness suites and more. One partner for the complete project.",
               },
             ].map((item) => (
-              <div key={item.title} className="bg-baseline-grey rounded-xl p-6 border border-gray-100">
+              <div key={item.title} className="bg-baseline-grey rounded-xl p-6 border border-gray-100 flex flex-col">
                 <h3
                   className="font-bold text-padel-black mb-2"
                   style={{ fontFamily: "var(--font-display)" }}
