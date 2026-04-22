@@ -82,15 +82,6 @@ export default function RoadmapCard({ phase }: { phase: Phase }) {
         </ul>
       )}
 
-      {phase.gate && (
-        <div className="mt-auto pt-3">
-          <span
-            className={`inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full ${gateStyles[phase.gate.style]}`}
-          >
-            {phase.gate.label}
-          </span>
-        </div>
-      )}
     </div>
   );
 }
