@@ -35,6 +35,7 @@ const courts = [
     highlight: true,
     type: "Panoramic",
     image: "/courts-tpl-pro.avif",
+    imagePosition: "30% center",
     description: "Our flagship court. A revolutionary design approach that establishes a new benchmark in padel aesthetics, performance and customisation.",
     features: [
       "Revolutionary design benchmark",
@@ -108,6 +109,7 @@ export default function CourtsPage() {
                   width={600}
                   height={400}
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: (court as { imagePosition?: string }).imagePosition ?? "center center" }}
                 />
               </div>
 
