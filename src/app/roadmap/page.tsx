@@ -353,7 +353,7 @@ export default function RoadmapPage() {
               Client Portal
             </p>
             <h2
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-padel-black mb-4"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-padel-black mb-4 lg:whitespace-nowrap"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Your personalised roadmap, managed for you.
