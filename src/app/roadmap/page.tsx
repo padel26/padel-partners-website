@@ -265,7 +265,7 @@ export default function RoadmapPage() {
           <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto lg:max-w-xs">
             {[
               { val: "12", label: "Phases" },
-              { val: "490", label: "Milestones" },
+              { val: "383+", label: "Milestones" },
               { val: "25", label: "Sub-phases" },
             ].map((s) => (
               <div key={s.label} className="text-center">
@@ -359,7 +359,7 @@ export default function RoadmapPage() {
               Your personalised roadmap, managed for you.
             </h2>
             <p className="text-lg text-net-silver">
-              Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 490 milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
+              Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 383+ milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
             </p>
           </div>
 
