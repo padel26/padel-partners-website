@@ -356,7 +356,7 @@ export default function Home() {
               Padel Courts
             </h2>
             <p className="text-lg text-net-silver leading-relaxed mb-8">
-              We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing incredible market knowledge as well as classic, panoramic and super panoramic courts, delivered and installed.
+              We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing incredible market knowledge as well as classic, panoramic and super panoramic courts, delivered and installed across the UK.
             </p>
             <Button href="/courts" size="md" variant="primary" className="mt-auto self-start">
               View Courts
