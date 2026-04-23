@@ -147,6 +147,22 @@ const categories: Category[] = [
           ],
         },
       },
+      {
+        name: "Legal Services",
+        price: "Quote",
+        type: "quote",
+        details: {
+          description: "Appoint a specialist solicitor to support with the lease or purchase of a site and the legal formation of your business.",
+          bullets: [
+            "Solicitor appointment and brief",
+            "Site lease or purchase support",
+            "Heads of terms review",
+            "Legal business formation",
+            "Shareholder and partnership agreements",
+            "Ongoing legal advisory",
+          ],
+        },
+      },
     ],
   },
   {
