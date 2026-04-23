@@ -84,7 +84,7 @@ export default function CourtsPage() {
             Premium padel courts UK
           </h1>
           <p className="text-xl text-net-silver max-w-2xl mx-auto">
-            We have an exclusive supply partnership with a premium Spanish manufacturer behind over 3,000 padel projects globally. We offer three court options fully customizable, delivered and installed in the UK.
+            We have a supply partnership with a premium Spanish manufacturer behind over 3,000 padel projects globally. We offer three court options fully customizable, delivered and installed in the UK.
           </p>
         </div>
       </section>
