@@ -259,7 +259,7 @@ export default function RoadmapPage() {
             {[
               { val: "12", label: "Phases" },
               { val: "383+", label: "Milestones" },
-              { val: "25", label: "Sub-phases" },
+              { val: "26", label: "Sub-phases" },
             ].map((s) => (
               <div key={s.label} className="text-center">
                 <div
