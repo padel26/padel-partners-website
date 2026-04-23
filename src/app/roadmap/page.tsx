@@ -230,13 +230,6 @@ const phases: Phase[] = [
   },
 ];
 
-// Groups of 3 phases for the snake rows
-const rows = [
-  { phases: phases.slice(0, 3), direction: "ltr" as const },
-  { phases: phases.slice(3, 6), direction: "rtl" as const },
-  { phases: phases.slice(6, 9), direction: "ltr" as const },
-  { phases: phases.slice(9, 12), direction: "rtl" as const },
-];
 
 export default function RoadmapPage() {
   return (
@@ -295,50 +288,11 @@ export default function RoadmapPage() {
             ))}
           </div>
 
-          {/* Desktop: snake layout */}
-          <div className="hidden lg:block">
-            {rows.map((row, rowIdx) => (
-              <div key={rowIdx}>
-                <div
-                  className="grid grid-cols-3"
-                  style={row.direction === "rtl" ? { direction: "rtl" } : undefined}
-                >
-                  {row.phases.map((phase) => (
-                    <div
-                      key={phase.number}
-                      className="py-3"
-                      style={row.direction === "rtl" ? { direction: "ltr" } : undefined}
-                    >
-                      <RoadmapCard phase={phase} />
-                    </div>
-                  ))}
-                </div>
-
-                {/* Connector between rows */}
-                {rowIdx < rows.length - 1 && (
-                  <div
-                    className={`flex ${row.direction === "ltr" ? "justify-end" : "justify-start"}`}
-                    style={{ height: 56 }}
-                  >
-                    <div
-                      style={{
-                        width: "calc(33.33% + 10px)",
-                        height: 56,
-                        ...(row.direction === "ltr"
-                          ? {
-                              borderRight: "3px solid #1A6B3A",
-                              borderBottom: "3px solid #1A6B3A",
-                              borderBottomRightRadius: 28,
-                            }
-                          : {
-                              borderLeft: "3px solid #1A6B3A",
-                              borderBottom: "3px solid #1A6B3A",
-                              borderBottomLeftRadius: 28,
-                            }),
-                      }}
-                    />
-                  </div>
-                )}
+          {/* Desktop: simple left-to-right grid */}
+          <div className="hidden lg:grid lg:grid-cols-3 lg:gap-y-0">
+            {phases.map((phase) => (
+              <div key={phase.number} className="py-3">
+                <RoadmapCard phase={phase} />
               </div>
             ))}
           </div>

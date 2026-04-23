@@ -30,8 +30,7 @@ export default function RoadmapCard({ phase }: { phase: Phase }) {
       {/* Header */}
       <div className="flex items-start gap-3 mb-4">
         <div
-          className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold flex-shrink-0"
-          style={{ backgroundColor: phase.bubbleColor }}
+          className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold flex-shrink-0 bg-court-green"
         >
           {phase.number}
         </div>
