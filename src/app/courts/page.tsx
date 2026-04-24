@@ -236,7 +236,7 @@ export default function CourtsPage() {
               {
                 title: "Canopies & Padel Buildings",
                 description: "Covered structures, roof systems and full padel buildings for indoor and hybrid facilities.",
-                image: "/courts-smart-tech.avif",
+                image: "/Curved Roof - external view (toploc roof and ST sides).jpg",
                 imageAlt: "Padel court canopy and building structure",
                 objectPosition: "center",
               },
@@ -256,7 +256,18 @@ export default function CourtsPage() {
                   {item.title}
                 </h3>
                 <p className="text-sm text-net-silver leading-relaxed mb-5">{item.description}</p>
-                <div className="w-full h-48 rounded-xl overflow-hidden bg-gray-200 mt-auto" />
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-gray-200 mt-auto">
+                  {item.image && (
+                    <Image
+                      src={item.image}
+                      alt={item.imageAlt}
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-cover"
+                      style={{ objectPosition: item.objectPosition }}
+                    />
+                  )}
+                </div>
               </div>
             ))}
           </div>
