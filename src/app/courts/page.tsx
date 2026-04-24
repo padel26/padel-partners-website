@@ -250,7 +250,7 @@ export default function CourtsPage() {
                 description: "Prefabricated club houses, and full interior fit-outs; coffee shops, bars, changing rooms, wellness suites and more. One partner for the complete project.",
                 image: "/Fit OuT.png",
                 imageAlt: "Padel club interior fit out",
-                objectPosition: "center",
+                objectPosition: "left center",
               },
             ].map((item) => (
               <div key={item.title} className="bg-baseline-grey rounded-xl p-6 border border-gray-100 flex flex-col">
