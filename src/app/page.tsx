@@ -219,48 +219,60 @@ export default function Home() {
           </div>
 
           {/* Portal window mockups */}
-          <div className="relative h-[420px] sm:h-[480px] lg:h-[520px] mt-4">
+          <div className="relative h-[480px] sm:h-[540px] lg:h-[580px] mt-4">
 
-            {/* Back window — roadmap view */}
-            <div className="absolute top-0 left-0 w-[82%] lg:w-[68%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.13)] border border-gray-200 bg-white">
+            {/* Back window — resource library / brain dump view */}
+            <div className="absolute top-0 left-0 w-[80%] lg:w-[66%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.10)] border border-gray-200 bg-white" style={{ bottom: 0 }}>
               {/* Browser chrome */}
-              <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
+              <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200 flex-shrink-0">
                 <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
                 <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
                 <span className="w-3 h-3 rounded-full bg-[#28C840]" />
                 <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
-                  portal.thepadelpartners.com
+                  portal.thepadelpartners.com/resources
                 </div>
               </div>
-              {/* Window content — roadmap */}
-              <div className="p-5 bg-[#F4F4F2]">
-                <div className="bg-padel-black rounded-xl p-4 mb-4 text-white">
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-white/50 mb-1">Project Roadmap</p>
-                  <p className="text-sm font-semibold mb-2" style={{ fontFamily: "var(--font-display)" }}>Track your progress through each stage of your padel club development journey.</p>
-                  <div className="w-full bg-white/10 rounded-full h-1.5">
-                    <div className="bg-court-green h-1.5 rounded-full" style={{ width: "35%" }} />
-                  </div>
-                  <p className="text-[10px] text-white/40 mt-1">4 of 12 phases complete</p>
-                </div>
-                <div className="grid grid-cols-3 gap-2">
-                  {[
-                    { label: "Conceive", done: true },
-                    { label: "Validate", done: true },
-                    { label: "Structure", done: true },
-                    { label: "Plan", done: true },
-                    { label: "Brand", done: false },
-                    { label: "Fund", done: false },
-                  ].map((phase) => (
-                    <div key={phase.label} className={`rounded-lg p-2.5 text-center text-[10px] font-semibold ${phase.done ? "bg-court-green text-white" : "bg-white text-padel-black border border-gray-100"}`}>
-                      {phase.label}
+              {/* Content */}
+              <div className="p-4 bg-[#F4F4F2] h-full overflow-hidden">
+                {/* Resource Library */}
+                <p className="text-xs font-bold text-padel-black mb-0.5">Resource Library</p>
+                <p className="text-[9px] text-net-silver mb-3">A curated library of practical frameworks, guides and templates.</p>
+                <div className="grid grid-cols-3 gap-1.5 mb-4">
+                  {["Site Appraisal Checklist","Basic Feasibility Framework","Basic Business Plan Framework","Basic Financial Model Builder","Funding Guide","Funding Checklist","Planning Guide","Design Guide","Basic Brand Identity Builder"].map((r) => (
+                    <div key={r} className="bg-white rounded-lg border border-gray-100 px-2 py-2 flex items-center justify-between">
+                      <span className="text-[8px] text-padel-black leading-tight pr-1">{r}</span>
+                      <span className="w-5 h-5 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[9px] flex-shrink-0">↓</span>
                     </div>
                   ))}
+                </div>
+                {/* My Reports */}
+                <p className="text-xs font-bold text-padel-black mb-0.5">My Reports</p>
+                <p className="text-[9px] text-net-silver mb-2">Your reports and review documents, created throughout the advisory process.</p>
+                <div className="grid grid-cols-2 gap-1.5 mb-4">
+                  {["Onboarding Report","Onboarding Call Report"].map((r) => (
+                    <div key={r} className="bg-white rounded-lg border border-gray-100 px-2.5 py-2 flex items-center justify-between">
+                      <div>
+                        <p className="text-[8px] font-semibold text-padel-black">{r}</p>
+                        <p className="text-[7px] text-net-silver">14 April 2026</p>
+                      </div>
+                      <span className="w-5 h-5 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[9px] flex-shrink-0">↓</span>
+                    </div>
+                  ))}
+                </div>
+                {/* Brain Dump */}
+                <p className="text-xs font-bold text-padel-black mb-0.5">Brain Dump</p>
+                <p className="text-[9px] text-net-silver mb-2">Capture your thoughts, ideas, and questions. We&apos;ll review and incorporate them into your strategy.</p>
+                <div className="bg-white rounded-lg border border-gray-100 p-2.5">
+                  <p className="text-[8px] text-net-silver mb-2">Share your thoughts, ideas, questions, or concerns...</p>
+                  <div className="flex justify-end">
+                    <span className="bg-[#3D3D3D] text-white text-[8px] font-semibold px-2.5 py-1 rounded-md">▷ Send</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Front window — portal roadmap view */}
-            <div className="absolute bottom-0 right-0 w-[75%] lg:w-[65%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white">
+            <div className="absolute top-0 bottom-0 right-0 w-[75%] lg:w-[65%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white">
               {/* Browser chrome */}
               <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
                 <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
@@ -271,7 +283,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Portal content */}
-              <div className="bg-[#F4F4F2]">
+              <div className="bg-[#F4F4F2] h-full overflow-hidden">
                 {/* Dark header banner */}
                 <div className="bg-[#141414] px-5 py-4 flex items-start justify-between">
                   <div>
