@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
+import ImageSlideshow from "@/components/ui/ImageSlideshow";
 
 export const metadata: Metadata = {
   title: "Padel Courts UK — Premium Courts Delivered & Installed | The Padel Partners",
@@ -236,9 +237,13 @@ export default function CourtsPage() {
               {
                 title: "Canopies & Padel Buildings",
                 description: "Covered structures, roof systems and full padel buildings for indoor and hybrid facilities.",
-                image: "/Curved Roof - external view (toploc roof and ST sides).jpg",
+                image: null,
                 imageAlt: "Padel court canopy and building structure",
                 objectPosition: "center",
+                slideshow: [
+                  { src: "/Curved Roof - external view (toploc roof and ST sides).jpg", alt: "Curved roof padel building exterior", objectPosition: "center" },
+                  { src: "/Apex - External (metal roof with anti con liner and yorkshire board sides).jpg", alt: "Apex padel building exterior", objectPosition: "center" },
+                ],
               },
               {
                 title: "Full Fit Out",
@@ -256,8 +261,13 @@ export default function CourtsPage() {
                   {item.title}
                 </h3>
                 <p className="text-sm text-net-silver leading-relaxed mb-5">{item.description}</p>
-                <div className="w-full h-48 rounded-xl overflow-hidden bg-gray-200 mt-auto">
-                  {item.image && (
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-gray-200 mt-auto relative">
+                  {(item as { slideshow?: { src: string; alt: string; objectPosition?: string }[] }).slideshow ? (
+                    <ImageSlideshow
+                      images={(item as { slideshow: { src: string; alt: string; objectPosition?: string }[] }).slideshow}
+                      interval={3500}
+                    />
+                  ) : item.image ? (
                     <Image
                       src={item.image}
                       alt={item.imageAlt}
@@ -266,7 +276,7 @@ export default function CourtsPage() {
                       className="w-full h-full object-cover"
                       style={{ objectPosition: item.objectPosition }}
                     />
-                  )}
+                  ) : null}
                 </div>
               </div>
             ))}
