@@ -552,33 +552,43 @@ export default function Home() {
       </section>
 
       {/* Buy Courts */}
-      <section className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey">
-        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
-          {/* Text */}
-          <div className="flex flex-col">
-            <h2
-              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Padel Courts
-            </h2>
-            <p className="text-lg text-net-silver leading-relaxed mb-8">
-              We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing incredible market knowledge as well as classic, panoramic and super panoramic courts, delivered and installed across the UK.
-            </p>
-            <Button href="/courts" size="md" variant="primary" className="mt-auto self-start">
-              View Courts
-              <ArrowRight size={16} />
-            </Button>
-          </div>
-          {/* Image */}
-          <div className="mt-10 lg:mt-0 rounded-2xl overflow-hidden border border-gray-200">
-            <Image
-              src="/courts-aerial.webp"
-              alt="Aerial view of floodlit padel courts at night — premium padel court supply and installation UK"
-              width={900}
-              height={600}
-              className="w-full h-full object-cover" style={{ objectPosition: "50% 72%" }}
-            />
+      <section className="bg-[#141414] overflow-hidden">
+        <div className="relative w-full h-[480px] lg:h-[520px]">
+          <Image
+            src="/courts-aerial.webp"
+            alt="Aerial view of floodlit padel courts at night — premium padel court supply and installation UK"
+            fill
+            className="object-cover"
+            style={{ objectPosition: "50% 72%", opacity: 0.45 }}
+          />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/40 to-transparent" />
+          {/* Content */}
+          <div className="absolute inset-0 flex flex-col justify-end px-6 lg:px-8 pb-12">
+            <div className="max-w-7xl mx-auto w-full">
+              <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">Court Supply</p>
+              <h2
+                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Padel Courts
+              </h2>
+              <p className="text-white/60 text-lg mb-6 max-w-xl leading-relaxed">
+                We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing incredible market knowledge as well as classic, panoramic and super panoramic courts, delivered and installed across the UK.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {["3,000+ Global Projects", "Classic", "Panoramic", "Super Panoramic", "UK Delivered & Installed"].map((s) => (
+                  <span key={s} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold border border-white/10">
+                    <span className="w-1.5 h-1.5 rounded-full bg-court-green flex-shrink-0" />
+                    {s}
+                  </span>
+                ))}
+              </div>
+              <Button href="/courts" size="md" variant="primary">
+                View Courts
+                <ArrowRight size={16} />
+              </Button>
+            </div>
           </div>
         </div>
       </section>
