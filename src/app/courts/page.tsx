@@ -202,33 +202,50 @@ export default function CourtsPage() {
       {/* Build services */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl mb-8">
-            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
-              Full Build Services
-            </p>
-            <h2
-              className="text-2xl sm:text-3xl font-bold text-padel-black mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Everything your site needs
-            </h2>
-            <p className="text-net-silver text-lg lg:whitespace-nowrap">
-              Courts are just the start. We coordinate every element of the build from the ground up.
-            </p>
+          <div className="flex items-start justify-between gap-6 mb-8">
+            <div className="max-w-2xl">
+              <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
+                Full Build Services
+              </p>
+              <h2
+                className="text-2xl sm:text-3xl font-bold text-padel-black mb-4"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Everything your site needs
+              </h2>
+              <p className="text-net-silver text-lg lg:whitespace-nowrap">
+                Courts are just the start. We coordinate every element of the build from the ground up.
+              </p>
+            </div>
+            <div className="hidden sm:block flex-shrink-0 pt-8">
+              <Button href="/contact?type=courts" size="md" variant="primary">
+                Enquire About Build
+                <ArrowRight size={16} />
+              </Button>
+            </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-stretch">
             {[
               {
                 title: "Foundations & Court Bases",
                 description: "Full scope groundworks and drainage all engineered to the exact specification of your designs and site conditions.",
+                image: "/courts-aerial.webp",
+                imageAlt: "Padel court foundations and groundworks",
+                objectPosition: "50% 72%",
               },
               {
                 title: "Canopies & Padel Buildings",
                 description: "Covered structures, roof systems and full padel buildings for indoor and hybrid facilities.",
+                image: "/courts-smart-tech.avif",
+                imageAlt: "Padel court canopy and building structure",
+                objectPosition: "center",
               },
               {
                 title: "Full Fit Out",
                 description: "Prefabricated club houses, and full interior fit-outs; coffee shops, bars, changing rooms, wellness suites and more. One partner for the complete project.",
+                image: "/how-we-work-v2.jpg",
+                imageAlt: "Padel club interior fit out",
+                objectPosition: "center",
               },
             ].map((item) => (
               <div key={item.title} className="bg-baseline-grey rounded-xl p-6 border border-gray-100 flex flex-col">
@@ -238,15 +255,10 @@ export default function CourtsPage() {
                 >
                   {item.title}
                 </h3>
-                <p className="text-sm text-net-silver leading-relaxed">{item.description}</p>
+                <p className="text-sm text-net-silver leading-relaxed mb-5">{item.description}</p>
+                <div className="w-full h-48 rounded-xl overflow-hidden bg-gray-200 mt-auto" />
               </div>
             ))}
-          </div>
-          <div className="mt-8">
-            <Button href="/contact?type=courts" size="md" variant="primary">
-              Enquire About Build
-              <ArrowRight size={16} />
-            </Button>
           </div>
         </div>
       </section>

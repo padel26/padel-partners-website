@@ -52,7 +52,7 @@ const personas = [
   {
     title: "Developers & Investors",
     description:
-      "Private sector clients who see the padel opportunity but need confidence it will stack up commercially.",
+      "Private sector clients who see the padel opportunity but need confidence it will stack up commercially and the support to move at speed.",
   },
   {
     title: "Public Sector Operators",

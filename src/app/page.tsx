@@ -431,7 +431,7 @@ export default function Home() {
                     ].map((p) => (
                       <div key={p.n} className="bg-white rounded-xl border border-gray-100 flex items-center gap-2.5 px-3 py-2.5">
                         <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
-                        <span className="text-[10px] font-bold text-court-green">{p.n} - {p.label}</span>
+                        <span className="text-[10px] font-bold text-court-green">{p.n} {p.label}</span>
                         <span className="text-[9px] text-net-silver ml-1">{p.count} complete</span>
                         <span className="ml-auto text-net-silver text-[10px]">∨</span>
                       </div>

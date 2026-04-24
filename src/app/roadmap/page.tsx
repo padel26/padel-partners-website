@@ -31,7 +31,7 @@ const phases: Phase[] = [
     bubbleColor: "#1A6B3A",
     dotStyle: "green",
     description:
-      "Define the vision, format, target customer and revenue model before a single penny is spent.",
+      "Every great club starts here. This is where the idea becomes a real, credible vision — who it's for, what it stands for and how it makes money. Get this right and everything that follows is faster, sharper and easier to fund.",
     milestones: [
       "Vision, objectives & success criteria",
       "Founder alignment & decision structure",
@@ -48,7 +48,7 @@ const phases: Phase[] = [
     bubbleColor: "#1A6B3A",
     dotStyle: "green",
     description:
-      "Test the concept against reality. Find and score sites, complete all feasibility work and make an informed go or no-go decision.",
+      "Before you spend a penny, prove it works. Find the right location, test the numbers and make sure the opportunity is as good as it looks. The clubs that succeed aren't the most passionate — they're the most prepared.",
     milestones: [
       "Site finding, longlist & scoring matrix",
       "Competitor & demographic review",
@@ -65,7 +65,7 @@ const phases: Phase[] = [
     bubbleColor: "#2C7A4E",
     dotStyle: "green",
     description:
-      "Get the business properly formed before committing to anything significant. Legal, financial and governance foundations.",
+      "The unglamorous stuff that protects everything else. Get the company set up properly, the shareholders aligned and the finances in order. It takes a week to do right and years to fix if you don't.",
     milestones: [
       "Business incorporation",
       "Shareholder structure & founder agreement",
@@ -82,7 +82,7 @@ const phases: Phase[] = [
     bubbleColor: "#2C7A4E",
     dotStyle: "green",
     description:
-      "Build the full commercial model. Define every revenue stream, staffing structure and operating model ready for investors.",
+      "This is where ambition meets spreadsheet. Map every revenue stream, model every scenario and build a commercial plan so watertight that investors lean in. The clubs that get funded are the ones that can prove they've thought of everything.",
     milestones: [
       "Revenue model & pricing strategy",
       "Membership, coaching & F&B strategy",
@@ -99,7 +99,7 @@ const phases: Phase[] = [
     bubbleColor: "#C9A84C",
     dotStyle: "gold",
     description:
-      "Create the identity before approaching investors or the market. Name the club and build the assets needed to present credibly.",
+      "Your club needs an identity that makes people stop and take notice. A name, a look and a voice that feels different — because in a market moving this fast, the clubs that stand out are the ones that get backed, chosen and remembered.",
     milestones: [
       "Club naming & trademark check",
       "Logo & visual identity system",
@@ -116,7 +116,7 @@ const phases: Phase[] = [
     bubbleColor: "#B8963E",
     dotStyle: "gold",
     description:
-      "Secure the capital to make it happen. Build the investor proposition, prepare the data room and negotiate through to legal completion.",
+      "Time to go and get the money. A compelling pitch, the right funders and a deal structured to protect the project long-term. This is the phase that turns a plan into a reality — and when it's done, everything accelerates.",
     milestones: [
       "Financial modelling & investor deck",
       "Data room preparation",
@@ -133,7 +133,7 @@ const phases: Phase[] = [
     bubbleColor: "#141414",
     dotStyle: "dark",
     description:
-      "Lock down the site on the right commercial terms. Negotiate and complete every legal clause before construction begins.",
+      "Lock down the site and lock it down properly. The right location on the right terms is one of the most important commercial decisions you'll make. Get the lease right and you've built the foundation for a genuinely profitable club.",
     milestones: [
       "Site securing strategy & offer",
       "Heads of terms negotiation",
@@ -150,7 +150,7 @@ const phases: Phase[] = [
     bubbleColor: "#141414",
     dotStyle: "dark",
     description:
-      "Turn the concept into a fully designed and consented scheme — from design brief to planning permission and all statutory approvals.",
+      "This is where the club starts to feel real. Every court, every space, every customer moment designed with intention — then taken through planning and statutory approvals to get the green light to build. Exciting, detailed, and absolutely critical to get right.",
     milestones: [
       "Consultant team setup & design brief",
       "Concept through technical design",
@@ -167,7 +167,7 @@ const phases: Phase[] = [
     bubbleColor: "#3D3D3D",
     dotStyle: "dark",
     description:
-      "Get the right people under contract at the right price. Run a rigorous tender process and finalise the full procurement package.",
+      "The right contractors. The right suppliers. The right price. This phase is where the project either stays on budget or doesn't — and the work done here makes the difference between a build that runs smoothly and one that doesn't.",
     milestones: [
       "Tender documentation & issue",
       "Contractor assessment & interviews",
@@ -184,7 +184,7 @@ const phases: Phase[] = [
     bubbleColor: "#3D3D3D",
     dotStyle: "dark",
     description:
-      "Deliver the physical club. Mobilise, construct, install courts, commission every system and reach practical completion.",
+      "It's happening. The groundworks are in, the courts are going up and the club is coming out of the ground. Months of planning turning into something you can walk around, photograph and show the world. There is nothing quite like watching a padel club take shape.",
     milestones: [
       "Site mobilisation & enabling works",
       "Groundworks, foundations & drainage",
@@ -201,7 +201,7 @@ const phases: Phase[] = [
     bubbleColor: "#1A6B3A",
     dotStyle: "green",
     description:
-      "Recruit and train the team, go to market, run pre-sales, stress test every system and deliver an opening that drives immediate commercial momentum.",
+      "The team is hired, the members are signed up and the doors are about to open. This is the moment everything has been building towards — and when it's done right, the energy in the room on opening day is something you'll never forget.",
     milestones: [
       "Team recruitment & training",
       "Website, social & digital build-out",
@@ -218,7 +218,7 @@ const phases: Phase[] = [
     bubbleColor: "#0E4D29",
     dotStyle: "green",
     description:
-      "Run the club to its full potential and then scale. Optimise, retain, expand programming — then use the playbook to evaluate and execute expansion.",
+      "The hard work is paying off. Members are coming back, the courts are full and the community around the club is building every week. This phase is about doing justice to what you've built — and then, when the time is right, taking everything you've learned and going again.",
     milestones: [
       "KPI, revenue & membership monitoring",
       "Occupancy & pricing optimisation",
@@ -247,7 +247,7 @@ export default function RoadmapPage() {
             Padel Club Development Roadmap
           </h1>
           <p className="text-xl text-net-silver max-w-2xl mx-auto">
-            Our structured 12-phase framework covers every stage of padel club development from initial idea through to a fully operational and growing club.
+            Our structured 12-phase framework covers every stage of padel club development<br className="hidden lg:block" /> from initial idea through to a fully operational and growing club.
           </p>
         </div>
       </section>
@@ -301,10 +301,10 @@ export default function RoadmapPage() {
 
       {/* Portal sell section */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
 
           {/* Text */}
-          <div className="mb-10 lg:mb-0">
+          <div className="mb-10 lg:mb-0 flex flex-col">
             <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
               Client Portal
             </p>
@@ -317,7 +317,7 @@ export default function RoadmapPage() {
             <p className="text-lg text-net-silver mb-6">
               Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 383+ milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 mt-auto">
               <a
                 href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
                 target="_blank"
@@ -509,7 +509,7 @@ export default function RoadmapPage() {
                     ].map((p) => (
                       <div key={p.n} className="bg-white rounded-xl border border-gray-100 flex items-center gap-2.5 px-3 py-2.5">
                         <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
-                        <span className="text-[10px] font-bold text-court-green">{p.n} - {p.label}</span>
+                        <span className="text-[10px] font-bold text-court-green">{p.n} {p.label}</span>
                         <span className="text-[9px] text-net-silver ml-1">{p.count} complete</span>
                         <span className="ml-auto text-net-silver text-[10px]">∨</span>
                       </div>
@@ -585,8 +585,8 @@ export default function RoadmapPage() {
           >
             Ready to start your journey?
           </h2>
-          <p className="text-white/60 mb-8">
-            Book a 15-minute call. We will help you identify exactly where you are on the roadmap and what comes next.
+          <p className="text-white/60 mb-8 lg:whitespace-nowrap">
+            Book a call and we will help you identify exactly where you are on the roadmap and what comes next.
           </p>
           <Button
             href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
@@ -594,7 +594,7 @@ export default function RoadmapPage() {
             size="md"
             variant="primary"
           >
-            Book a Demo
+            Book a Call
             <ArrowRight size={16} />
           </Button>
         </div>
