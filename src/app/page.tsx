@@ -259,35 +259,93 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Front window — resource / action view */}
-            <div className="absolute bottom-0 right-0 w-[72%] lg:w-[62%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white">
+            {/* Front window — portal roadmap view */}
+            <div className="absolute bottom-0 right-0 w-[75%] lg:w-[65%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white">
               {/* Browser chrome */}
               <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
                 <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
                 <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
                 <span className="w-3 h-3 rounded-full bg-[#28C840]" />
                 <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
-                  portal.thepadelpartners.com/actions
+                  portal.thepadelpartners.com
                 </div>
               </div>
-              {/* Window content — action points */}
-              <div className="p-5 bg-[#F4F4F2]">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-net-silver mb-3">My Action Points</p>
-                <div className="space-y-2">
-                  {[
-                    { text: "Confirm site shortlist with advisor", done: true },
-                    { text: "Upload feasibility report draft", done: true },
-                    { text: "Review heads of terms from solicitor", done: false },
-                    { text: "Submit planning pre-application", done: false },
-                    { text: "Finalise investor pitch deck", done: false },
-                  ].map((item) => (
-                    <div key={item.text} className={`flex items-center gap-2.5 p-2.5 rounded-lg text-xs ${item.done ? "bg-[#E8F5EE]" : "bg-white border border-gray-100"}`}>
-                      <span className={`w-4 h-4 rounded flex-shrink-0 flex items-center justify-center text-[9px] font-bold ${item.done ? "bg-court-green text-white" : "border border-gray-300"}`}>
-                        {item.done ? "✓" : ""}
-                      </span>
-                      <span className={item.done ? "text-court-green line-through" : "text-padel-black"}>{item.text}</span>
+              {/* Portal content */}
+              <div className="bg-[#F4F4F2]">
+                {/* Dark header banner */}
+                <div className="bg-[#141414] px-5 py-4 flex items-start justify-between">
+                  <div>
+                    <p className="text-[9px] text-white/40 mb-0.5">Welcome back</p>
+                    <p className="text-sm font-bold text-white leading-tight">Test Client</p>
+                    <p className="text-[10px] text-white/50 mt-0.5">Test Padel Co</p>
+                  </div>
+                  <div className="bg-white/10 rounded-lg px-3 py-2 text-center">
+                    <p className="text-[8px] font-semibold text-white/50 uppercase tracking-widest">Progress</p>
+                    <p className="text-base font-bold text-white leading-tight">2%</p>
+                    <p className="text-[8px] text-white/40">7 of 382 milestones</p>
+                  </div>
+                </div>
+                {/* Progress bar */}
+                <div className="bg-[#141414] px-5 pb-3">
+                  <div className="w-full bg-white/10 rounded-full h-1">
+                    <div className="bg-court-green h-1 rounded-full" style={{ width: "2%" }} />
+                  </div>
+                </div>
+
+                {/* Roadmap section */}
+                <div className="px-5 pt-4 pb-1">
+                  <p className="text-xs font-bold text-padel-black mb-0.5">Project Roadmap</p>
+                  <p className="text-[9px] text-net-silver mb-3">Track your progress through each stage of your padel club development journey.</p>
+
+                  {/* Phase rows */}
+                  <div className="space-y-1.5">
+                    {/* Phase 01 — expanded */}
+                    <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                      <div className="flex items-center gap-2.5 px-3 py-2.5">
+                        <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[10px] font-bold text-court-green">01 - Conceive</span>
+                        <span className="text-[9px] text-net-silver ml-1">2/6 complete</span>
+                        <span className="ml-auto text-net-silver text-[10px]">∧</span>
+                      </div>
+                      {/* Expanded items */}
+                      <div className="border-t border-gray-50 px-3 pb-2">
+                        <p className="text-[8px] font-semibold text-net-silver uppercase tracking-widest py-1.5">Vision, Strategy & Concept</p>
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-2 py-1 text-[9px]">
+                            <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[7px] flex-shrink-0">✓</span>
+                            <span className="text-net-silver line-through">Define Vision, Mission & Objectives</span>
+                            <span className="ml-auto text-court-green font-semibold text-[8px]">FREE resource</span>
+                          </div>
+                          <div className="flex items-center gap-2 py-1 text-[9px] bg-yellow-50 -mx-1 px-1 rounded">
+                            <span className="w-3 h-3 rounded bg-yellow-400 flex-shrink-0" />
+                            <span className="text-padel-black">Decision-Maker Appointments</span>
+                          </div>
+                          <div className="flex items-center gap-2 py-1 text-[9px]">
+                            <span className="w-3 h-3 rounded border border-gray-200 flex-shrink-0" />
+                            <span className="text-padel-black">Define Initial Budget Expectations</span>
+                          </div>
+                          <div className="flex items-center gap-2 py-1 text-[9px] bg-red-50 -mx-1 px-1 rounded">
+                            <span className="w-3 h-3 rounded bg-red-500 flex items-center justify-center text-white text-[7px] flex-shrink-0">!</span>
+                            <span className="text-red-600 font-semibold">Define Experience & Atmosphere</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  ))}
+
+                    {/* Phases 02–04 collapsed */}
+                    {[
+                      { n: "02", label: "Validate", count: "5/12" },
+                      { n: "03", label: "Structure", count: "0/7" },
+                      { n: "04", label: "Plan", count: "0/31" },
+                    ].map((p) => (
+                      <div key={p.n} className="bg-white rounded-xl border border-gray-100 flex items-center gap-2.5 px-3 py-2.5">
+                        <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[10px] font-bold text-court-green">{p.n} - {p.label}</span>
+                        <span className="text-[9px] text-net-silver ml-1">{p.count} complete</span>
+                        <span className="ml-auto text-net-silver text-[10px]">∨</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
