@@ -222,7 +222,7 @@ export default function Home() {
           <div className="relative h-[480px] sm:h-[540px] lg:h-[580px] mt-4">
 
             {/* Back window — resource library / brain dump view */}
-            <div className="absolute top-0 left-0 w-[80%] lg:w-[66%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.10)] border border-gray-200 bg-white" style={{ bottom: 0 }}>
+            <div className="absolute top-0 left-0 w-[80%] lg:w-[66%] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.10)] border border-gray-200 bg-white z-10" style={{ bottom: 0 }}>
               {/* Browser chrome */}
               <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200 flex-shrink-0">
                 <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
@@ -272,7 +272,7 @@ export default function Home() {
             </div>
 
             {/* Front window — portal roadmap view */}
-            <div className="absolute top-0 bottom-0 right-0 w-[75%] lg:w-[65%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white">
+            <div className="absolute top-[12%] bottom-0 right-0 w-[68%] lg:w-[60%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white z-20">
               {/* Browser chrome */}
               <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
                 <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
