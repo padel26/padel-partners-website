@@ -248,7 +248,7 @@ export default function CourtsPage() {
               {
                 title: "Full Fit Out",
                 description: "Prefabricated club houses, and full interior fit-outs; coffee shops, bars, changing rooms, wellness suites and more. One partner for the complete project.",
-                image: "/how-we-work-v2.jpg",
+                image: "/Fit OuT.png",
                 imageAlt: "Padel club interior fit out",
                 objectPosition: "center",
               },
