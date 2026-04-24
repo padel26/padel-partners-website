@@ -527,29 +527,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social proof / mid-page CTA */}
-      <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-baseline-grey rounded-2xl p-8 max-w-3xl mx-auto">
-            <div>
-              <p className="text-lg text-net-silver leading-relaxed text-center mb-6">
-                With proven sequencing, clear oversight and commercially focused decision making, we help you avoid costly mistakes, saving you thousands and keeping the project on track from day one. Our clients benefit from ongoing access to our team throughout the journey, giving them strategic support, expert input, accountability and trusted specialist guidance from concept to delivery.
-              </p>
-              <div className="flex justify-center">
-                <Button
-                  href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
-                  external
-                  size="md"
-                  variant="primary"
-                >
-                  Book a Call
-                  <ArrowRight size={16} />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Buy Courts */}
       <section className="bg-[#141414] overflow-hidden">
@@ -576,14 +553,6 @@ export default function Home() {
               <p className="text-white/60 text-lg mb-6 max-w-xl leading-relaxed">
                 We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing incredible market knowledge as well as classic, panoramic and super panoramic courts, delivered and installed across the UK.
               </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                {["3,000+ Global Projects", "Classic", "Panoramic", "Super Panoramic", "UK Delivered & Installed"].map((s) => (
-                  <span key={s} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold border border-white/10">
-                    <span className="w-1.5 h-1.5 rounded-full bg-court-green flex-shrink-0" />
-                    {s}
-                  </span>
-                ))}
-              </div>
               <Button href="/courts" size="md" variant="primary">
                 View Courts
                 <ArrowRight size={16} />
@@ -704,34 +673,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter signup */}
+      {/* Newsletter + CTA */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
-            Join our newsletter!
-          </p>
-          <h2
-            className="text-3xl font-bold text-padel-black mb-3"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Stay up to date
-          </h2>
-          <p className="text-net-silver mb-8">
-            Stay up to date with the latest development insights, industry news, trends and updates from The Padel Partners direct to your inbox.
-          </p>
-          <form className="flex flex-col gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="w-full px-4 py-2.5 rounded-md border border-gray-200 bg-white text-padel-black text-sm placeholder:text-net-silver focus:outline-none focus:ring-2 focus:ring-court-green"
-            />
-            <button
-              type="submit"
-              className="w-full px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+
+          {/* Left — CTA container */}
+          <div className="bg-baseline-grey rounded-2xl p-8 flex flex-col justify-center">
+            <p className="text-lg text-net-silver leading-relaxed text-center mb-6">
+              With proven sequencing, clear oversight and commercially focused decision making, we help you avoid costly mistakes, saving you thousands and keeping the project on track from day one. Our clients benefit from ongoing access to our team throughout the journey, giving them strategic support, expert input, accountability and trusted specialist guidance from concept to delivery.
+            </p>
+            <div className="flex justify-center">
+              <Button
+                href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
+                external
+                size="md"
+                variant="primary"
+              >
+                Book a Call
+                <ArrowRight size={16} />
+              </Button>
+            </div>
+          </div>
+
+          {/* Right — Newsletter */}
+          <div className="bg-baseline-grey rounded-2xl p-8 flex flex-col justify-center text-center">
+            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
+              Join our newsletter!
+            </p>
+            <h2
+              className="text-3xl font-bold text-padel-black mb-3"
+              style={{ fontFamily: "var(--font-display)" }}
             >
-              Subscribe
-            </button>
-          </form>
+              Stay up to date
+            </h2>
+            <p className="text-net-silver mb-8">
+              Stay up to date with the latest development insights, industry news, trends and updates from The Padel Partners direct to your inbox.
+            </p>
+            <form className="flex flex-col gap-3 max-w-md mx-auto w-full">
+              <input
+                type="email"
+                placeholder="your@email.com"
+                className="w-full px-4 py-2.5 rounded-md border border-gray-200 bg-white text-padel-black text-sm placeholder:text-net-silver focus:outline-none focus:ring-2 focus:ring-court-green"
+              />
+              <button
+                type="submit"
+                className="w-full px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+
         </div>
       </section>
     </>
