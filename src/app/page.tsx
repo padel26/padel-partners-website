@@ -190,38 +190,55 @@ export default function Home() {
       {/* Why TPP */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl mb-10">
-            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
-              Why The Padel Partners
-            </p>
+          <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
+            Why The Padel Partners
+          </p>
+        </div>
+        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+
+          {/* Text */}
+          <div className="mb-10 lg:mb-0">
             <h2
-              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-6"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Access the expertise you need when you need it.
             </h2>
-            <p className="text-lg text-net-silver">
+            <p className="text-lg text-net-silver mb-6">
               We work alongside you as a trusted strategic partner, providing coordination, input and oversight across every phase. The result is a development process that runs effectively, with informed decision-making, clear accountability and timely progress.
             </p>
-          </div>
-
-          {/* Roadmap intro */}
-          <div className="mb-6">
             <h3
-              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-6"
+              className="text-xl sm:text-2xl font-semibold text-padel-black mb-3"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Padel Club Roadmap
+              Client Portal & Roadmap
             </h3>
-            <p className="text-lg text-net-silver max-w-2xl">
-              Our structured 12-phase framework covers every stage of padel club development from initial idea through to a fully operational and growing club.
+            <p className="text-lg text-net-silver mb-6">
+              Working with us you get access to your own personalised client portal to track 383+ milestones over 12 phases, access our free resource library, your strategy reports, manage your action points, share files and stay fully aligned with our team at every stage.
             </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Button
+                href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
+                external
+                size="md"
+                variant="primary"
+              >
+                Book a Demo
+                <ArrowRight size={16} />
+              </Button>
+              <Link
+                href="/roadmap"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-court-green hover:text-padel-black transition-colors"
+              >
+                View full roadmap <ArrowRight size={14} />
+              </Link>
+            </div>
           </div>
 
           {/* Portal window mockups */}
-          <div className="relative h-[480px] sm:h-[540px] lg:h-[580px] mt-4">
+          <div className="relative h-[340px] lg:h-[440px]">
 
-            {/* Back window — resource library / brain dump view */}
+            {/* Back window — action points / share files view */}
             <div className="absolute top-0 left-0 w-[80%] lg:w-[66%] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.10)] border border-gray-200 bg-white z-10" style={{ bottom: 0 }}>
               {/* Browser chrome */}
               <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200 flex-shrink-0">
@@ -229,45 +246,108 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
                 <span className="w-3 h-3 rounded-full bg-[#28C840]" />
                 <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
-                  The Padel Partners Client Portal
+                  Client Portal
                 </div>
               </div>
               {/* Content */}
-              <div className="p-4 bg-[#F4F4F2] h-full overflow-hidden">
-                {/* Resource Library */}
-                <p className="text-xs font-bold text-padel-black mb-0.5">Resource Library</p>
-                <p className="text-[9px] text-net-silver mb-3">A curated library of practical frameworks, guides and templates.</p>
-                <div className="grid grid-cols-3 gap-1.5 mb-4">
-                  {["Site Appraisal Checklist","Basic Feasibility Framework","Basic Business Plan Framework","Basic Financial Model Builder","Funding Guide","Funding Checklist","Planning Guide","Design Guide","Basic Brand Identity Builder"].map((r) => (
-                    <div key={r} className="bg-white rounded-lg border border-gray-100 px-2 py-2 flex items-center justify-between">
-                      <span className="text-[8px] text-padel-black leading-tight pr-1">{r}</span>
-                      <span className="w-5 h-5 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[9px] flex-shrink-0">↓</span>
-                    </div>
-                  ))}
-                </div>
-                {/* My Reports */}
-                <p className="text-xs font-bold text-padel-black mb-0.5">My Reports</p>
-                <p className="text-[9px] text-net-silver mb-2">Your reports and review documents, created throughout the advisory process.</p>
-                <div className="grid grid-cols-2 gap-1.5 mb-4">
-                  {["Onboarding Report","Onboarding Call Report"].map((r) => (
-                    <div key={r} className="bg-white rounded-lg border border-gray-100 px-2.5 py-2 flex items-center justify-between">
-                      <div>
-                        <p className="text-[8px] font-semibold text-padel-black">{r}</p>
-                        <p className="text-[7px] text-net-silver">14 April 2026</p>
+              <div className="p-3 bg-[#F4F4F2] h-full overflow-hidden space-y-3">
+
+                {/* FREE Resource Library */}
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">FREE Resource Library</p>
+                  <div className="grid grid-cols-3 gap-1">
+                    {["Site Appraisal Checklist","Feasibility Framework","Business Plan Framework","Financial Model Builder","Funding Guide","Planning Guide"].map((r) => (
+                      <div key={r} className="bg-white rounded-lg border border-gray-100 px-1.5 py-1.5 flex items-center justify-between gap-1">
+                        <span className="text-[7px] text-padel-black leading-tight">{r}</span>
+                        <span className="w-4 h-4 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[8px] flex-shrink-0">↓</span>
                       </div>
-                      <span className="w-5 h-5 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[9px] flex-shrink-0">↓</span>
-                    </div>
-                  ))}
-                </div>
-                {/* Brain Dump */}
-                <p className="text-xs font-bold text-padel-black mb-0.5">Brain Dump</p>
-                <p className="text-[9px] text-net-silver mb-2">Capture your thoughts, ideas, and questions. We&apos;ll review and incorporate them into your strategy.</p>
-                <div className="bg-white rounded-lg border border-gray-100 p-2.5">
-                  <p className="text-[8px] text-net-silver mb-2">Share your thoughts, ideas, questions, or concerns...</p>
-                  <div className="flex justify-end">
-                    <span className="bg-[#3D3D3D] text-white text-[8px] font-semibold px-2.5 py-1 rounded-md">▷ Send</span>
+                    ))}
                   </div>
                 </div>
+
+                {/* My Action Points */}
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">My Action Points</p>
+                  <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                    <div className="flex items-center justify-between px-2.5 py-1.5 border-b border-gray-50">
+                      <p className="text-[8px] font-semibold text-padel-black">Onboarding Call Action Points</p>
+                      <span className="text-[7px] text-net-silver">3/3 done</span>
+                    </div>
+                    <div className="px-2.5 py-1.5 space-y-1">
+                      {["Share your target site list","Complete the feasibility form","Book your first strategy call"].map((item) => (
+                        <div key={item} className="flex items-center gap-1.5">
+                          <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[6px] flex-shrink-0">✓</span>
+                          <span className="text-[7px] text-net-silver line-through">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex items-center justify-between px-2.5 py-1.5 border-t border-gray-50">
+                      <p className="text-[8px] font-semibold text-padel-black">Strategy Call Action Points</p>
+                      <span className="text-[7px] text-net-silver">1/3 done</span>
+                    </div>
+                    <div className="px-2.5 py-1.5 space-y-1">
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[6px] flex-shrink-0">✓</span>
+                        <span className="text-[7px] text-net-silver line-through">Review the competitor analysis</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[7px] text-padel-black">Request heads of terms from landlord</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[7px] text-padel-black">Share draft financial model for review</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* My Reports */}
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">My Reports</p>
+                  <div className="grid grid-cols-2 gap-1">
+                    {["Onboarding Report","Strategy Call Report"].map((r) => (
+                      <div key={r} className="bg-white rounded-lg border border-gray-100 px-2 py-1.5 flex items-center justify-between">
+                        <div>
+                          <p className="text-[7px] font-semibold text-padel-black">{r}</p>
+                          <p className="text-[6px] text-net-silver">14 April 2026</p>
+                        </div>
+                        <span className="w-4 h-4 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[8px] flex-shrink-0">↓</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Brain Dump */}
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">Brain Dump</p>
+                  <div className="bg-white rounded-lg border border-gray-100 p-2">
+                    <p className="text-[7px] text-net-silver mb-1.5">Share your thoughts, ideas, questions or concerns...</p>
+                    <div className="flex justify-end">
+                      <span className="bg-[#3D3D3D] text-white text-[7px] font-semibold px-2 py-0.5 rounded">▷ Send</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Share Files */}
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">Share Files</p>
+                  <div className="border-2 border-dashed border-gray-200 rounded-lg p-2 text-center bg-white mb-1">
+                    <p className="text-[7px] font-semibold text-padel-black">Click to upload a file</p>
+                    <p className="text-[6px] text-net-silver">Any file type accepted</p>
+                  </div>
+                  <div className="bg-white rounded-lg border border-gray-100 px-2 py-1.5 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-4 h-4 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[8px] flex-shrink-0">📄</span>
+                      <div>
+                        <p className="text-[7px] font-semibold text-padel-black">Site_Appraisal_v2.pdf</p>
+                        <p className="text-[6px] text-net-silver">Uploaded 22 April 2026</p>
+                      </div>
+                    </div>
+                    <span className="text-[7px] text-court-green font-semibold">✓</span>
+                  </div>
+                </div>
+
               </div>
             </div>
 
@@ -279,7 +359,7 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
                 <span className="w-3 h-3 rounded-full bg-[#28C840]" />
                 <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
-                  The Padel Partners Client Portal
+                  Client Portal
                 </div>
               </div>
               {/* Portal content */}
@@ -288,8 +368,8 @@ export default function Home() {
                 <div className="bg-[#141414] px-5 py-4 flex items-start justify-between">
                   <div>
                     <p className="text-[9px] text-white/40 mb-0.5">Welcome back</p>
-                    <p className="text-sm font-bold text-white leading-tight">Test Client</p>
-                    <p className="text-[10px] text-white/50 mt-0.5">Test Padel Co</p>
+                    <p className="text-sm font-bold text-white leading-tight">Padel Client</p>
+                    <p className="text-[10px] text-white/50 mt-0.5">New Padel Co</p>
                   </div>
                   <div className="bg-white/10 rounded-lg px-3 py-2 text-center">
                     <p className="text-[8px] font-semibold text-white/50 uppercase tracking-widest">Progress</p>
@@ -315,7 +395,7 @@ export default function Home() {
                     <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
                       <div className="flex items-center gap-2.5 px-3 py-2.5">
                         <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
-                        <span className="text-[10px] font-bold text-court-green">01 - Conceive</span>
+                        <span className="text-[10px] font-bold text-court-green">Conceive</span>
                         <span className="text-[9px] text-net-silver ml-1">2/6 complete</span>
                         <span className="ml-auto text-net-silver text-[10px]">∧</span>
                       </div>
@@ -326,7 +406,6 @@ export default function Home() {
                           <div className="flex items-center gap-2 py-1 text-[9px]">
                             <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[7px] flex-shrink-0">✓</span>
                             <span className="text-net-silver line-through">Define Vision, Mission & Objectives</span>
-                            <span className="ml-auto text-court-green font-semibold text-[8px]">FREE resource</span>
                           </div>
                           <div className="flex items-center gap-2 py-1 text-[9px] bg-yellow-50 -mx-1 px-1 rounded">
                             <span className="w-3 h-3 rounded bg-yellow-400 flex-shrink-0" />
@@ -362,15 +441,6 @@ export default function Home() {
               </div>
             </div>
 
-          </div>
-
-          <div className="mt-6">
-            <Link
-              href="/roadmap"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-court-green hover:text-padel-black transition-colors"
-            >
-              View full roadmap <ArrowRight size={14} />
-            </Link>
           </div>
 
         </div>

@@ -301,22 +301,228 @@ export default function RoadmapPage() {
 
       {/* Portal sell section */}
       <section className="pt-10 pb-10 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl mb-10">
+        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+
+          {/* Text */}
+          <div className="mb-10 lg:mb-0">
             <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
               Client Portal
             </p>
             <h2
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-padel-black mb-4 lg:whitespace-nowrap"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-padel-black mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Your personalised roadmap, managed for you.
             </h2>
-            <p className="text-lg text-net-silver">
+            <p className="text-lg text-net-silver mb-6">
               Every consultancy package includes access to your own personalized client portal with a live dashboard that tracks your progress through all 383+ milestones, keeps your resources in one place and keeps you and our team fully aligned at every stage.
             </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
+              >
+                Book a Demo
+                <ArrowRight size={15} />
+              </a>
+              <a
+                href="/packages"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-net-silver hover:text-padel-black transition-colors"
+              >
+                View Packages →
+              </a>
+            </div>
           </div>
 
+          {/* Portal window mockups */}
+          <div className="relative h-[340px] mb-12 lg:mb-0">
+
+            {/* Back window — all portal sections */}
+            <div className="absolute top-0 left-0 w-[80%] lg:w-[66%] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.10)] border border-gray-200 bg-white z-10" style={{ bottom: 0 }}>
+              <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200 flex-shrink-0">
+                <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+                <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
+                <span className="w-3 h-3 rounded-full bg-[#28C840]" />
+                <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
+                  Client Portal
+                </div>
+              </div>
+              <div className="p-3 bg-[#F4F4F2] h-full overflow-hidden space-y-3">
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">FREE Resource Library</p>
+                  <div className="grid grid-cols-3 gap-1">
+                    {["Site Appraisal Checklist","Feasibility Framework","Business Plan Framework","Financial Model Builder","Funding Guide","Planning Guide"].map((r) => (
+                      <div key={r} className="bg-white rounded-lg border border-gray-100 px-1.5 py-1.5 flex items-center justify-between gap-1">
+                        <span className="text-[7px] text-padel-black leading-tight">{r}</span>
+                        <span className="w-4 h-4 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[8px] flex-shrink-0">↓</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">My Action Points</p>
+                  <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                    <div className="flex items-center justify-between px-2.5 py-1.5 border-b border-gray-50">
+                      <p className="text-[8px] font-semibold text-padel-black">Onboarding Call Action Points</p>
+                      <span className="text-[7px] text-net-silver">3/3 done</span>
+                    </div>
+                    <div className="px-2.5 py-1.5 space-y-1">
+                      {["Share your target site list","Complete the feasibility form","Book your first strategy call"].map((item) => (
+                        <div key={item} className="flex items-center gap-1.5">
+                          <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[6px] flex-shrink-0">✓</span>
+                          <span className="text-[7px] text-net-silver line-through">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex items-center justify-between px-2.5 py-1.5 border-t border-gray-50">
+                      <p className="text-[8px] font-semibold text-padel-black">Strategy Call Action Points</p>
+                      <span className="text-[7px] text-net-silver">1/3 done</span>
+                    </div>
+                    <div className="px-2.5 py-1.5 space-y-1">
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[6px] flex-shrink-0">✓</span>
+                        <span className="text-[7px] text-net-silver line-through">Review the competitor analysis</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[7px] text-padel-black">Request heads of terms from landlord</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-3 h-3 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[7px] text-padel-black">Share draft financial model for review</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">My Reports</p>
+                  <div className="grid grid-cols-2 gap-1">
+                    {["Onboarding Report","Strategy Call Report"].map((r) => (
+                      <div key={r} className="bg-white rounded-lg border border-gray-100 px-2 py-1.5 flex items-center justify-between">
+                        <div>
+                          <p className="text-[7px] font-semibold text-padel-black">{r}</p>
+                          <p className="text-[6px] text-net-silver">14 April 2026</p>
+                        </div>
+                        <span className="w-4 h-4 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[8px] flex-shrink-0">↓</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">Brain Dump</p>
+                  <div className="bg-white rounded-lg border border-gray-100 p-2">
+                    <p className="text-[7px] text-net-silver mb-1.5">Share your thoughts, ideas, questions or concerns...</p>
+                    <div className="flex justify-end">
+                      <span className="bg-[#3D3D3D] text-white text-[7px] font-semibold px-2 py-0.5 rounded">▷ Send</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold text-padel-black mb-1">Share Files</p>
+                  <div className="border-2 border-dashed border-gray-200 rounded-lg p-2 text-center bg-white mb-1">
+                    <p className="text-[7px] font-semibold text-padel-black">Click to upload a file</p>
+                    <p className="text-[6px] text-net-silver">Any file type accepted</p>
+                  </div>
+                  <div className="bg-white rounded-lg border border-gray-100 px-2 py-1.5 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-4 h-4 rounded bg-[#E8F5EE] flex items-center justify-center text-court-green text-[8px] flex-shrink-0">📄</span>
+                      <div>
+                        <p className="text-[7px] font-semibold text-padel-black">Site_Appraisal_v2.pdf</p>
+                        <p className="text-[6px] text-net-silver">Uploaded 22 April 2026</p>
+                      </div>
+                    </div>
+                    <span className="text-[7px] text-court-green font-semibold">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Front window — portal roadmap view */}
+            <div className="absolute top-[12%] bottom-0 right-0 w-[68%] lg:w-[60%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white z-20">
+              <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
+                <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+                <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
+                <span className="w-3 h-3 rounded-full bg-[#28C840]" />
+                <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
+                  Client Portal
+                </div>
+              </div>
+              <div className="bg-[#F4F4F2] h-full overflow-hidden">
+                <div className="bg-[#141414] px-4 py-2 flex items-center justify-between">
+                  <div>
+                    <p className="text-[8px] text-white/40">Welcome back</p>
+                    <p className="text-xs font-bold text-white leading-tight">Padel Client</p>
+                    <p className="text-[9px] text-white/50">New Padel Co</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-white/10 rounded px-2 py-1 text-center">
+                      <p className="text-[7px] font-semibold text-white/50 uppercase tracking-widest">Progress</p>
+                      <p className="text-sm font-bold text-white leading-tight">2%</p>
+                      <p className="text-[7px] text-white/40">7 of 382</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-[#141414] px-4 pb-2">
+                  <div className="w-full bg-white/10 rounded-full h-0.5">
+                    <div className="bg-court-green h-0.5 rounded-full" style={{ width: "2%" }} />
+                  </div>
+                </div>
+                <div className="px-5 pt-4 pb-1">
+                  <p className="text-xs font-bold text-padel-black mb-0.5">Project Roadmap</p>
+                  <p className="text-[9px] text-net-silver mb-3">Track your progress through each stage of your padel club development journey.</p>
+                  <div className="space-y-1.5">
+                    <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                      <div className="flex items-center gap-2.5 px-3 py-2.5">
+                        <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[10px] font-bold text-court-green">Conceive</span>
+                        <span className="text-[9px] text-net-silver ml-1">2/6 complete</span>
+                        <span className="ml-auto text-net-silver text-[10px]">∧</span>
+                      </div>
+                      <div className="border-t border-gray-50 px-3 pb-2">
+                        <p className="text-[8px] font-semibold text-net-silver uppercase tracking-widest py-1.5">Vision, Strategy & Concept</p>
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-2 py-1 text-[9px]">
+                            <span className="w-3 h-3 rounded bg-court-green flex items-center justify-center text-white text-[7px] flex-shrink-0">✓</span>
+                            <span className="text-net-silver line-through">Define Vision, Mission & Objectives</span>
+                          </div>
+                          <div className="flex items-center gap-2 py-1 text-[9px] bg-yellow-50 -mx-1 px-1 rounded">
+                            <span className="w-3 h-3 rounded bg-yellow-400 flex-shrink-0" />
+                            <span className="text-padel-black">Decision-Maker Appointments</span>
+                          </div>
+                          <div className="flex items-center gap-2 py-1 text-[9px]">
+                            <span className="w-3 h-3 rounded border border-gray-200 flex-shrink-0" />
+                            <span className="text-padel-black">Define Initial Budget Expectations</span>
+                          </div>
+                          <div className="flex items-center gap-2 py-1 text-[9px] bg-red-50 -mx-1 px-1 rounded">
+                            <span className="w-3 h-3 rounded bg-red-500 flex items-center justify-center text-white text-[7px] flex-shrink-0">!</span>
+                            <span className="text-red-600 font-semibold">Define Experience & Atmosphere</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {[
+                      { n: "02", label: "Validate", count: "5/12" },
+                      { n: "03", label: "Structure", count: "0/7" },
+                      { n: "04", label: "Plan", count: "0/31" },
+                    ].map((p) => (
+                      <div key={p.n} className="bg-white rounded-xl border border-gray-100 flex items-center gap-2.5 px-3 py-2.5">
+                        <span className="w-3.5 h-3.5 rounded border border-gray-300 flex-shrink-0" />
+                        <span className="text-[10px] font-bold text-court-green">{p.n} - {p.label}</span>
+                        <span className="text-[9px] text-net-silver ml-1">{p.count} complete</span>
+                        <span className="ml-auto text-net-silver text-[10px]">∨</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div className="max-w-7xl mx-auto mt-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               {
@@ -367,23 +573,6 @@ export default function RoadmapPage() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="/packages"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-court-green text-white text-sm font-semibold rounded-md hover:bg-court-green-dark transition-colors"
-            >
-              View Packages
-              <ArrowRight size={15} />
-            </a>
-            <a
-              href="https://portal.thepadelpartners.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-net-silver hover:text-padel-black transition-colors"
-            >
-              Client Portal →
-            </a>
-          </div>
         </div>
       </section>
 
