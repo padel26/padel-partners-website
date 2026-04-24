@@ -125,12 +125,12 @@ export default function Home() {
       {/* Hero */}
       <section className="pt-24 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl lg:max-w-5xl">
+          <div className="max-w-3xl">
             <h1
-              className="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.5rem] font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Your strategic partner<br className="hidden lg:block" /> for padel club development.
+              Your strategic<br className="hidden lg:block" /> partner for<br className="hidden lg:block" /> padel club<br className="hidden lg:block" /> development.
             </h1>
             <p className="text-lg text-net-silver leading-relaxed mb-10 max-w-2xl lg:max-w-[700px]">
               We help our clients in both the private and public sector bring their padel projects to life with expert guidance, trusted specialists and structured support at every stage.
