@@ -230,9 +230,9 @@ export default function CourtsPage() {
               {
                 title: "Foundations & Court Bases",
                 description: "Full scope groundworks and drainage all engineered to the exact specification of your designs and site conditions.",
-                image: "/courts-aerial.webp",
+                image: "/Foundations.jpg.avif",
                 imageAlt: "Padel court foundations and groundworks",
-                objectPosition: "50% 72%",
+                objectPosition: "center",
               },
               {
                 title: "Canopies & Padel Buildings",
