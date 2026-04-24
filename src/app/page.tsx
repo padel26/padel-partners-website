@@ -229,7 +229,7 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
                 <span className="w-3 h-3 rounded-full bg-[#28C840]" />
                 <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
-                  portal.thepadelpartners.com/resources
+                  The Padel Partners Client Portal
                 </div>
               </div>
               {/* Content */}
@@ -279,7 +279,7 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
                 <span className="w-3 h-3 rounded-full bg-[#28C840]" />
                 <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
-                  portal.thepadelpartners.com
+                  The Padel Partners Client Portal
                 </div>
               </div>
               {/* Portal content */}
