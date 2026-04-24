@@ -405,7 +405,7 @@ export default function RoadmapPage() {
             size="md"
             variant="primary"
           >
-            Book a Call
+            Book a Demo
             <ArrowRight size={16} />
           </Button>
         </div>
