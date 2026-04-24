@@ -150,7 +150,7 @@ const phases: Phase[] = [
     bubbleColor: "#141414",
     dotStyle: "dark",
     description:
-      "This is where the club starts to feel real. Every court, every space, every customer moment designed with intention — then taken through planning and statutory approvals to get the green light to build. Exciting, detailed, and absolutely critical to get right.",
+      "This is where the club starts to feel real. Every court, every space, every customer moment designed with intention, then taken through planning and statutory approvals to get the green light to build. Exciting, detailed, and absolutely critical to get right.",
     milestones: [
       "Consultant team setup & design brief",
       "Concept through technical design",
