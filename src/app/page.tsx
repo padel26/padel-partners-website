@@ -218,22 +218,89 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 12-phase cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {journeySteps.map((step, i) => (
-              <Link
-                key={step}
-                href={`/roadmap#phase-${String(i + 1).padStart(2, "0")}`}
-                className="flex items-center gap-3 px-4 py-4 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-court-green hover:shadow-md transition-all group"
-              >
-                <span className="text-sm font-bold text-court-green tabular-nums flex-shrink-0">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-sm font-semibold text-padel-black leading-tight group-hover:text-court-green transition-colors" style={{ fontFamily: "var(--font-display)" }}>
-                  {step}
-                </span>
-              </Link>
-            ))}
+          {/* Portal window mockups */}
+          <div className="relative h-[420px] sm:h-[480px] lg:h-[520px] mt-4">
+
+            {/* Back window — roadmap view */}
+            <div className="absolute top-0 left-0 w-[82%] lg:w-[68%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.13)] border border-gray-200 bg-white">
+              {/* Browser chrome */}
+              <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
+                <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+                <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
+                <span className="w-3 h-3 rounded-full bg-[#28C840]" />
+                <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
+                  portal.thepadelpartners.com
+                </div>
+              </div>
+              {/* Window content — roadmap */}
+              <div className="p-5 bg-[#F4F4F2]">
+                <div className="bg-padel-black rounded-xl p-4 mb-4 text-white">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-white/50 mb-1">Project Roadmap</p>
+                  <p className="text-sm font-semibold mb-2" style={{ fontFamily: "var(--font-display)" }}>Track your progress through each stage of your padel club development journey.</p>
+                  <div className="w-full bg-white/10 rounded-full h-1.5">
+                    <div className="bg-court-green h-1.5 rounded-full" style={{ width: "35%" }} />
+                  </div>
+                  <p className="text-[10px] text-white/40 mt-1">4 of 12 phases complete</p>
+                </div>
+                <div className="grid grid-cols-3 gap-2">
+                  {[
+                    { label: "Conceive", done: true },
+                    { label: "Validate", done: true },
+                    { label: "Structure", done: true },
+                    { label: "Plan", done: true },
+                    { label: "Brand", done: false },
+                    { label: "Fund", done: false },
+                  ].map((phase) => (
+                    <div key={phase.label} className={`rounded-lg p-2.5 text-center text-[10px] font-semibold ${phase.done ? "bg-court-green text-white" : "bg-white text-padel-black border border-gray-100"}`}>
+                      {phase.label}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Front window — resource / action view */}
+            <div className="absolute bottom-0 right-0 w-[72%] lg:w-[62%] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-gray-200 bg-white">
+              {/* Browser chrome */}
+              <div className="flex items-center gap-1.5 px-4 py-3 bg-[#F0F0EE] border-b border-gray-200">
+                <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+                <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
+                <span className="w-3 h-3 rounded-full bg-[#28C840]" />
+                <div className="ml-3 flex-1 bg-white rounded px-3 py-1 text-[10px] text-net-silver">
+                  portal.thepadelpartners.com/actions
+                </div>
+              </div>
+              {/* Window content — action points */}
+              <div className="p-5 bg-[#F4F4F2]">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-net-silver mb-3">My Action Points</p>
+                <div className="space-y-2">
+                  {[
+                    { text: "Confirm site shortlist with advisor", done: true },
+                    { text: "Upload feasibility report draft", done: true },
+                    { text: "Review heads of terms from solicitor", done: false },
+                    { text: "Submit planning pre-application", done: false },
+                    { text: "Finalise investor pitch deck", done: false },
+                  ].map((item) => (
+                    <div key={item.text} className={`flex items-center gap-2.5 p-2.5 rounded-lg text-xs ${item.done ? "bg-[#E8F5EE]" : "bg-white border border-gray-100"}`}>
+                      <span className={`w-4 h-4 rounded flex-shrink-0 flex items-center justify-center text-[9px] font-bold ${item.done ? "bg-court-green text-white" : "border border-gray-300"}`}>
+                        {item.done ? "✓" : ""}
+                      </span>
+                      <span className={item.done ? "text-court-green line-through" : "text-padel-black"}>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-6">
+            <Link
+              href="/roadmap"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-court-green hover:text-padel-black transition-colors"
+            >
+              View full roadmap <ArrowRight size={14} />
+            </Link>
           </div>
 
         </div>
