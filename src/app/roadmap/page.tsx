@@ -4,9 +4,9 @@ import Button from "@/components/ui/Button";
 import RoadmapCard from "@/components/ui/RoadmapCard";
 
 export const metadata: Metadata = {
-  title: "Padel Club Development Roadmap — 12 Phases | The Padel Partners",
+  title: "Padel Club Development Roadmap: 12 Phases | The Padel Partners",
   description:
-    "A structured 12-phase roadmap covering every stage of padel club development — from initial concept through to a fully operational and growing club.",
+    "A structured 12-phase roadmap covering every stage of padel club development, from initial concept through to a fully operational and growing club.",
   alternates: { canonical: "https://www.thepadelpartners.com/roadmap" },
 };
 
@@ -31,7 +31,7 @@ const phases: Phase[] = [
     bubbleColor: "#1A6B3A",
     dotStyle: "green",
     description:
-      "Every great club starts here. This is where the idea becomes a real, credible vision — who it's for, what it stands for and how it makes money. Get this right and everything that follows is faster, sharper and easier to fund.",
+      "Every great club starts here. This is where your idea becomes a real, credible vision, what type of club you want and how it makes money. Get this right and everything that follows is faster and sharper.",
     milestones: [
       "Vision, objectives & success criteria",
       "Founder alignment & decision structure",
@@ -48,7 +48,7 @@ const phases: Phase[] = [
     bubbleColor: "#1A6B3A",
     dotStyle: "green",
     description:
-      "Before you spend a penny, prove it works. Find the right location, test the numbers and make sure the opportunity is as good as it looks. The clubs that succeed aren't the most passionate — they're the most prepared.",
+      "Before you spend a penny, prove it works. Find the right location, test the numbers and make sure the opportunity is as good as it looks. The clubs that succeed aren't the most passionate, they're the most prepared.",
     milestones: [
       "Site finding, longlist & scoring matrix",
       "Competitor & demographic review",
@@ -99,7 +99,7 @@ const phases: Phase[] = [
     bubbleColor: "#C9A84C",
     dotStyle: "gold",
     description:
-      "Your club needs an identity that makes people stop and take notice. A name, a look and a voice that feels different — because in a market moving this fast, the clubs that stand out are the ones that get backed, chosen and remembered.",
+      "Your club needs an identity that makes people stop and take notice. A name, a look and a voice that feels different, because in a market moving this fast, the clubs that stand out are the ones that get backed, chosen and remembered.",
     milestones: [
       "Club naming & trademark check",
       "Logo & visual identity system",
@@ -116,7 +116,7 @@ const phases: Phase[] = [
     bubbleColor: "#B8963E",
     dotStyle: "gold",
     description:
-      "Time to go and get the money. A compelling pitch, the right funders and a deal structured to protect the project long-term. This is the phase that turns a plan into a reality — and when it's done, everything accelerates.",
+      "Time to go and get the money. A compelling pitch, the right funders and a deal structured to protect the project long-term. This is the phase that turns a plan into a reality and when it's done, everything accelerates.",
     milestones: [
       "Financial modelling & investor deck",
       "Data room preparation",
@@ -133,7 +133,7 @@ const phases: Phase[] = [
     bubbleColor: "#141414",
     dotStyle: "dark",
     description:
-      "Lock down the site and lock it down properly. The right location on the right terms is one of the most important commercial decisions you'll make. Get the lease right and you've built the foundation for a genuinely profitable club.",
+      "Lock down the site and lock it down properly. The right location on the right terms is one of the most important commercial decisions you'll make. Get the lease or purchase right and you've built the foundation for a genuinely profitable club.",
     milestones: [
       "Site securing strategy & offer",
       "Heads of terms negotiation",
@@ -167,7 +167,7 @@ const phases: Phase[] = [
     bubbleColor: "#3D3D3D",
     dotStyle: "dark",
     description:
-      "The right contractors. The right suppliers. The right price. This phase is where the project either stays on budget or doesn't — and the work done here makes the difference between a build that runs smoothly and one that doesn't.",
+      "The right contractors. The right suppliers. The right price. This phase is where the project either stays on budget or doesn't and the work done here makes the difference between a build that runs smoothly and one that doesn't.",
     milestones: [
       "Tender documentation & issue",
       "Contractor assessment & interviews",
@@ -184,7 +184,7 @@ const phases: Phase[] = [
     bubbleColor: "#3D3D3D",
     dotStyle: "dark",
     description:
-      "It's happening. The groundworks are in, the courts are going up and the club is coming out of the ground. Months of planning turning into something you can walk around, photograph and show the world. There is nothing quite like watching a padel club take shape.",
+      "It's happening. The groundworks are in, the courts are going up and the club is coming out of the ground. Months of planning turning into something you can walk around, photograph and show the world. There is nothing quite like watching your padel club take shape.",
     milestones: [
       "Site mobilisation & enabling works",
       "Groundworks, foundations & drainage",
@@ -201,7 +201,7 @@ const phases: Phase[] = [
     bubbleColor: "#1A6B3A",
     dotStyle: "green",
     description:
-      "The team is hired, the members are signed up and the doors are about to open. This is the moment everything has been building towards — and when it's done right, the energy in the room on opening day is something you'll never forget.",
+      "The team is hired, the members are signed up and the doors are about to open. This is the moment everything has been building towards and when it's done right, the energy in the room on opening day is something you'll never forget.",
     milestones: [
       "Team recruitment & training",
       "Website, social & digital build-out",
@@ -218,7 +218,7 @@ const phases: Phase[] = [
     bubbleColor: "#0E4D29",
     dotStyle: "green",
     description:
-      "The hard work is paying off. Members are coming back, the courts are full and the community around the club is building every week. This phase is about doing justice to what you've built — and then, when the time is right, taking everything you've learned and going again.",
+      "The hard work is paying off. Members are coming back, the courts are full and the community around the club is building every week. This phase is about doing justice to what you've built and then, when the time is right, taking everything you've learned and going again.",
     milestones: [
       "KPI, revenue & membership monitoring",
       "Occupancy & pricing optimisation",
