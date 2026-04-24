@@ -125,9 +125,9 @@ export default function Home() {
       {/* Hero */}
       <section className="pt-24 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl lg:max-w-5xl">
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] 2xl:text-[4.5rem] font-bold text-padel-black mb-6 leading-[1.05] tracking-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Your strategic partner<br className="hidden lg:block" /> for padel club development.
@@ -194,7 +194,7 @@ export default function Home() {
             Why The Padel Partners
           </p>
         </div>
-        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+        <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
 
           {/* Text */}
           <div className="mb-10 lg:mb-0">
@@ -236,7 +236,7 @@ export default function Home() {
           </div>
 
           {/* Portal window mockups */}
-          <div className="relative h-[340px] lg:h-[440px]">
+          <div className="relative h-[340px] lg:h-full">
 
             {/* Back window — action points / share files view */}
             <div className="absolute top-0 left-0 w-[80%] lg:w-[66%] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.10)] border border-gray-200 bg-white z-10" style={{ bottom: 0 }}>
@@ -449,7 +449,7 @@ export default function Home() {
       {/* Packages preview */}
       <section id="packages" className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey scroll-mt-16">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl mb-10">
+          <div className="max-w-2xl mb-10 mx-auto text-center">
             <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
               Packages
             </p>
