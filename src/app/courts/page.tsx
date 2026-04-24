@@ -237,13 +237,9 @@ export default function CourtsPage() {
               {
                 title: "Canopies & Padel Buildings",
                 description: "Covered structures, roof systems and full padel buildings for indoor and hybrid facilities.",
-                image: null,
+                image: "/Curved Roof - external view (toploc roof and ST sides).jpg",
                 imageAlt: "Padel court canopy and building structure",
                 objectPosition: "center",
-                slideshow: [
-                  { src: "/Curved Roof - external view (toploc roof and ST sides).jpg", alt: "Curved roof padel building exterior", objectPosition: "center" },
-                  { src: "/Apex - External (metal roof with anti con liner and yorkshire board sides).jpg", alt: "Apex padel building exterior", objectPosition: "center" },
-                ],
               },
               {
                 title: "Full Fit Out",
