@@ -600,7 +600,7 @@ export default function ServicesPage() {
     <>
       {/* Header */}
       <section className="pt-24 pb-4 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto text-left lg:text-center">
+        <div className="max-w-7xl mx-auto text-center">
           <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
             Bolt-On Services
           </p>
@@ -614,7 +614,7 @@ export default function ServicesPage() {
             Targeted and comprehensive expertise exactly when you need it to support you across every phase of your project.
           </p>
           <p className="text-sm text-net-silver mt-3">
-            All services are available as add-ons to our{" "}
+            All services are available individually or as add-ons to our{" "}
             <a href="/packages" className="text-court-green hover:underline font-medium">
               monthly consultancy packages
             </a>
