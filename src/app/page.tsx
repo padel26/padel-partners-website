@@ -133,7 +133,7 @@ export default function Home() {
               Your strategic<br className="hidden lg:block" /> partner for<br className="hidden lg:block" /> padel club<br className="hidden lg:block" /> development.
             </h1>
             <p className="text-lg text-net-silver leading-relaxed mb-10 max-w-2xl lg:max-w-[700px]">
-              The Padel Partners is a specialist strategic consultancy for padel club development in the UK, working with investors, developers and operators from initial feasibility through to launch and operations. We bring expert guidance, trusted specialists and structured support at every stage.
+              The Padel Partners is a specialist consultancy for padel club development in the UK. We bring expert guidance, trusted specialists and structured support at every phase.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
