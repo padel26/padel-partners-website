@@ -122,7 +122,7 @@ export default function CourtsPage() {
             Court Supply
           </p>
           <h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
+            className="text-2xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4 whitespace-nowrap sm:whitespace-normal"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Premium padel courts UK
