@@ -607,7 +607,7 @@ export default function RoadmapPage() {
             Ready to start your journey?
           </h2>
           <p className="text-white/60 mb-8 lg:whitespace-nowrap">
-            Book a call and we will help you identify exactly where you are on the roadmap and what comes next.
+            Book a call and we will help you identify exactly where you are on the roadmap &amp; what&apos;s next.
           </p>
           <Button
             href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
