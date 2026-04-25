@@ -231,9 +231,30 @@ const phases: Phase[] = [
 ];
 
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to develop a padel club in the UK",
+  "description": "A structured 12-phase framework for developing a padel club from initial concept through to a fully operational and growing business.",
+  "step": phases.map((phase) => ({
+    "@type": "HowToStep",
+    "position": phase.index,
+    "name": phase.title,
+    "text": phase.description,
+    "itemListElement": phase.milestones.map((m) => ({
+      "@type": "HowToDirection",
+      "text": m,
+    })),
+  })),
+};
+
 export default function RoadmapPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       {/* Header */}
       <section className="pt-24 pb-10 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto text-center max-w-3xl mx-auto">

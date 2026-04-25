@@ -613,6 +613,13 @@ export default function ServicesPage() {
           <p className="text-xl text-net-silver lg:whitespace-nowrap">
             Targeted and comprehensive expertise exactly when you need it to support you across every phase of your project.
           </p>
+          <p className="text-sm text-net-silver mt-3">
+            All services are available as add-ons to our{" "}
+            <a href="/packages" className="text-court-green hover:underline font-medium">
+              monthly consultancy packages
+            </a>
+            , with preferential pricing for package holders.
+          </p>
         </div>
       </section>
 

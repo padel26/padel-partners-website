@@ -191,7 +191,7 @@ const faqs = [
   },
   {
     q: "What are bolt-on services?",
-    a: "Bolt-ons are one-off or separate specialist services, like feasibility reports, business plans, financial modelling, design packs and more. Package holders receive preferential pricing.",
+    a: "Bolt-ons are one-off specialist services — feasibility reports, business plans, financial modelling, design packs, project management and more — available at thepadelpartners.com/services. Package holders receive preferential pricing.",
   },
   {
     q: "What happens after I subscribe?",
@@ -360,15 +360,23 @@ export default function PackagesPage() {
           <p className="text-white/60 mb-8">
             Book a 15-minute call.<br />We will help you figure out exactly what level of support your project needs.
           </p>
-          <Button
-            href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
-            external
-            size="md"
-            variant="primary"
-          >
-            Book a Call
-            <ArrowRight size={16} />
-          </Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button
+              href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
+              external
+              size="md"
+              variant="primary"
+            >
+              Book a Call
+              <ArrowRight size={16} />
+            </Button>
+            <a
+              href="/services"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors"
+            >
+              View bolt-on services →
+            </a>
+          </div>
         </div>
       </section>
     </>
