@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | The Padel Partners",
+  title: "Terms of Service",
   description: "Terms and conditions governing the use of The Padel Partners consultancy services and website.",
   alternates: { canonical: "https://www.thepadelpartners.com/terms" },
   robots: { index: true, follow: true },

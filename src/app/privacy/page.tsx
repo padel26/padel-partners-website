@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | The Padel Partners",
+  title: "Privacy Policy",
   description: "How The Padel Partners collects, uses and protects your personal data in accordance with UK GDPR.",
   alternates: { canonical: "https://www.thepadelpartners.com/privacy" },
   robots: { index: true, follow: true },
