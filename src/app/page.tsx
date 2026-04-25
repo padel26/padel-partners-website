@@ -365,20 +365,20 @@ export default function Home() {
               {/* Portal content */}
               <div className="bg-[#F4F4F2] h-full overflow-hidden">
                 {/* Dark header banner */}
-                <div className="bg-[#141414] px-5 py-4 flex items-start justify-between">
+                <div className="bg-[#141414] px-4 py-2 flex items-center justify-between">
                   <div>
-                    <p className="text-[9px] text-white/40 mb-0.5">Welcome back</p>
-                    <p className="text-sm font-bold text-white leading-tight">Padel Client</p>
-                    <p className="text-[10px] text-white/50 mt-0.5">New Padel Co</p>
+                    <p className="text-[8px] text-white/40">Welcome back</p>
+                    <p className="text-xs font-bold text-white leading-tight">Padel Client</p>
+                    <p className="text-[8px] text-white/50">New Padel Co</p>
                   </div>
-                  <div className="bg-white/10 rounded-lg px-3 py-2 text-center">
-                    <p className="text-[8px] font-semibold text-white/50 uppercase tracking-widest">Progress</p>
-                    <p className="text-base font-bold text-white leading-tight">2%</p>
-                    <p className="text-[8px] text-white/40">7 of 382 milestones</p>
+                  <div className="bg-white/10 rounded-lg px-2 py-1 text-center">
+                    <p className="text-[7px] font-semibold text-white/50 uppercase tracking-widest">Progress</p>
+                    <p className="text-sm font-bold text-white leading-tight">2%</p>
+                    <p className="text-[7px] text-white/40">7 of 382 milestones</p>
                   </div>
                 </div>
                 {/* Progress bar */}
-                <div className="bg-[#141414] px-5 pb-3">
+                <div className="bg-[#141414] px-4 pb-2">
                   <div className="w-full bg-white/10 rounded-full h-1">
                     <div className="bg-court-green h-1 rounded-full" style={{ width: "2%" }} />
                   </div>
