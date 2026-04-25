@@ -668,7 +668,7 @@ export default function ServicesPage() {
               className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Premium court supply from Spain
+              Premium court supply<br className="sm:hidden" /> from Spain
             </h2>
             <p className="text-white/60 text-lg mb-8">
               We have an exclusive supply partnership with a premium Spanish court manufacturer behind over 3,000 padel projects globally. We sell classic, panoramic and super-panoramic fully customisable padel courts delivered and installed in the UK.
