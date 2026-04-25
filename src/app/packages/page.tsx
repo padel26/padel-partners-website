@@ -216,7 +216,7 @@ export default function PackagesPage() {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-padel-black mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Support at every scale
+            Padel club consultancy packages
           </h1>
           <p className="text-xl text-net-silver max-w-2xl mx-auto lg:whitespace-nowrap">
             We offer six tiers from early stage guidance to fully embedded expert support.

@@ -79,7 +79,6 @@ const organizationSchema = {
   "logo": "https://www.thepadelpartners.com/og-image.jpg",
   "description": "The UK's specialist strategic consultancy for padel club development. Expert guidance for investors, developers and operators from feasibility through to launch and operations.",
   "email": "info@thepadelpartners.com",
-  "telephone": "+44-800-000-0000",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "GB",
@@ -114,7 +113,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${ibmPlexSans.variable} h-full scroll-smooth`}>
+    <html lang="en-GB" className={`${ibmPlexSans.variable} h-full scroll-smooth`}>
       <head>
         <script
           type="application/ld+json"

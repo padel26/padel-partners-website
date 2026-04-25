@@ -4,9 +4,9 @@ import { MapPin, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Padel Club Case Studies & Project Portfolio — UK Development Examples",
+  title: "Padel Club Portfolio & Case Studies — UK Projects",
   description:
-    "The Padel Partners has guided padel club development projects across the UK — Wetherby, Sleaford, Wimbledon, Nottingham, Horwich and Kirkby. Developers, public sector and entrepreneurs.",
+    "The Padel Partners has guided padel club projects across the UK — Wetherby, Wimbledon, Nottingham, Horwich and more. Serving developers, public sector and entrepreneurs.",
   alternates: { canonical: "https://www.thepadelpartners.com/trusted-by" },
 };
 

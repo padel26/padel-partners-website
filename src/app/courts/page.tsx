@@ -5,9 +5,9 @@ import Button from "@/components/ui/Button";
 import ImageSlideshow from "@/components/ui/ImageSlideshow";
 
 export const metadata: Metadata = {
-  title: "Padel Courts UK — Premium Courts Delivered & Installed | The Padel Partners",
+  title: "Padel Courts UK — Premium Courts Delivered & Installed",
   description:
-    "Premium padel courts delivered and installed across the UK. Classic, panoramic and super panoramic configurations from our exclusive Spanish manufacturer with over 3,000 projects globally.",
+    "Premium padel courts delivered and installed across the UK. Classic, panoramic and super panoramic from our exclusive Spanish manufacturer — 3,000+ projects globally.",
   alternates: { canonical: "https://www.thepadelpartners.com/courts" },
 };
 
@@ -69,9 +69,52 @@ const courts = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of padel court are available in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Padel Partners offers three court configurations: classic panoramic (SX1), flagship panoramic (TPL PRO) and super panoramic (VX360). All are delivered and installed across the UK from our exclusive Spanish manufacturer with over 3,000 projects globally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do padel courts need planning permission in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Planning permission requirements for padel courts in the UK depend on the site, location and structure type. Outdoor courts often fall under permitted development, while indoor structures and canopies typically require a planning application. The Padel Partners guides clients through the full planning process as part of our build services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What smart technology is available for padel courts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smart court technology is available across all our court models, including in-built cameras for match statistics, automatic scoreboards, remote lighting control and smart access integrated with your booking system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does The Padel Partners handle the full padel club build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Beyond court supply, The Padel Partners coordinates every element of the build including foundations and court bases, canopies and padel buildings, and full interior fit-outs including clubhouses, changing rooms, bars and wellness suites."
+      }
+    }
+  ]
+};
+
 export default function CourtsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Header */}
       <section className="pt-24 pb-4 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto text-center max-w-3xl mx-auto">
@@ -258,9 +301,9 @@ export default function CourtsPage() {
                 </h3>
                 <p className="text-sm text-net-silver leading-relaxed mb-5">{item.description}</p>
                 <div className="w-full h-48 rounded-xl overflow-hidden bg-gray-200 mt-auto relative">
-                  {(item as { slideshow?: { src: string; alt: string; objectPosition?: string }[] }).slideshow ? (
+                  {(item as unknown as { slideshow?: { src: string; alt: string; objectPosition?: string }[] }).slideshow ? (
                     <ImageSlideshow
-                      images={(item as { slideshow: { src: string; alt: string; objectPosition?: string }[] }).slideshow}
+                      images={(item as unknown as { slideshow: { src: string; alt: string; objectPosition?: string }[] }).slideshow}
                       interval={3500}
                     />
                   ) : item.image ? (

@@ -105,7 +105,7 @@ const pillars = [
   {
     title: "Full lifecycle coverage",
     description:
-      "From the first feasibility question to operational excellence. One trusted partner across all 8 phases and 18 milestones.",
+      "From the first feasibility question to operational excellence. One trusted partner across all 12 phases and 383+ milestones.",
   },
   {
     title: "Speed without risk",
