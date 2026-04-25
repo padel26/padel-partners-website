@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import RoadmapCard from "@/components/ui/RoadmapCard";
 
 export const metadata: Metadata = {
-  title: "Padel Club Development Roadmap: 12 Phases | The Padel Partners",
+  title: "Padel Club Development Roadmap — 12 Phases",
   description:
     "A structured 12-phase roadmap covering every stage of padel club development, from initial concept through to a fully operational and growing club.",
   alternates: { canonical: "https://www.thepadelpartners.com/roadmap" },
