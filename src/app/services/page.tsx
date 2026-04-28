@@ -337,7 +337,7 @@ const categories: Category[] = [
   },
   {
     id: "build",
-    title: "Build & Courts",
+    title: "Courts & Build",
     description: "Court supply, construction coordination and project management.",
     services: [
       {
