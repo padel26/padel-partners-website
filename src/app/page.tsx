@@ -569,7 +569,7 @@ export default function Home() {
                 We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing classic, panoramic and super panoramic courts, delivered and installed across the UK.
               </p>
               <p className="text-white/60 text-lg mb-6 max-w-xl leading-relaxed">
-                We also coordinate the full build — foundations, canopies, fit-out and project management. One partner from groundworks to opening day.
+                We also offer a coordinated full design and build service from foundations, canopies, padel buildings, fit-out and project management. One partner from the first design and spade in the ground to opening day.
               </p>
               <Button href="/courts" size="md" variant="primary">
                 View Courts &amp; Build
