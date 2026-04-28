@@ -213,9 +213,9 @@ export default function Home() {
             <p className="text-lg text-net-silver mb-6">
               We work alongside you as a trusted strategic partner, providing coordination, input and oversight across every phase. The result is a development process that runs effectively, with informed decision-making, clear accountability and timely progress.
             </p>
-            <div className="bg-baseline-grey rounded-xl p-4 mb-6">
+            <div className="mb-6">
               <p className="text-sm font-semibold text-padel-black mb-1">Design &amp; Build</p>
-              <p className="text-sm text-net-silver">We coordinate the full build — from groundworks and foundations through to court installation, canopies and complete interior fit-out. One partner for the entire project.</p>
+              <p className="text-sm text-net-silver">We coordinate the full build from groundworks through to court installation, canopies, full padel buildings and complete interior fit-out. One partner for the entire project.</p>
             </div>
             <h3
               className="text-xl sm:text-2xl font-semibold text-padel-black mb-3"
