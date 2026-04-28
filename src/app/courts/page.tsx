@@ -258,7 +258,7 @@ export default function CourtsPage() {
                 Everything your site needs
               </h2>
               <p className="text-net-silver text-lg lg:whitespace-nowrap">
-                Courts are just the start. We coordinate every element of the build from the ground up.
+                Courts are just the start. We coordinate every element of the build from the ground up with our full design &amp; build services.
               </p>
             </div>
             <div className="hidden sm:block flex-shrink-0 pt-8">
