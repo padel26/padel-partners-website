@@ -220,7 +220,7 @@ export default function Home() {
               >
                 Design &amp; Build
               </h3>
-              <p className="text-lg text-net-silver">We coordinate the full build from groundworks through to court installation, canopies, full padel buildings and complete interior fit-out. One partner for the entire project.</p>
+              <p className="text-lg text-net-silver">We offer a coordinated full design &amp; build service from groundworks through to court installation, canopies, full padel buildings and complete interior fit-out. One partner for the entire project.</p>
             </div>
             <h3
               className="text-xl sm:text-2xl font-semibold text-padel-black mb-3"
