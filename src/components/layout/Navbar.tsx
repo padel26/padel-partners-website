@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/packages", label: "Packages" },
   { href: "/services", label: "Services" },
   { href: "/roadmap", label: "Roadmap" },
-  { href: "/courts", label: "Courts" },
+  { href: "/courts", label: "Courts & Build" },
   { href: "/trusted-by", label: "Trusted By" },
   // { href: "/blog", label: "Blog" }, // hidden until blog posts are ready
   { href: "/contact", label: "Contact" },

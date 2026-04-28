@@ -117,6 +117,12 @@ const pillars = [
     description:
       "Proprietary relationships with specialists, suppliers and industry experts you simply cannot access independently.",
   },
+  {
+    title: "Design & Build",
+    description:
+      "We coordinate the full build — from groundworks and foundations through to court installation, canopies and complete interior fit-out.",
+    highlight: true,
+  },
 ];
 
 export default function Home() {
@@ -133,7 +139,8 @@ export default function Home() {
               Your strategic<br className="hidden lg:block" /> partner for<br className="hidden lg:block" /> padel club<br className="hidden lg:block" /> development.
             </h1>
             <p className="text-lg text-net-silver leading-relaxed mb-10 max-w-2xl lg:max-w-[700px]">
-              The Padel Partners is a specialist consultancy for padel club development in the UK. We bring expert guidance, trusted specialists and structured support at every phase.
+              The Padel Partners is a specialist consultancy for padel club development in the UK. We bring expert guidance, trusted specialists and structured support at every phase —{" "}
+from initial concept through to full design, build and launch.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
@@ -207,6 +214,10 @@ export default function Home() {
             <p className="text-lg text-net-silver mb-6">
               We work alongside you as a trusted strategic partner, providing coordination, input and oversight across every phase. The result is a development process that runs effectively, with informed decision-making, clear accountability and timely progress.
             </p>
+            <div className="bg-baseline-grey rounded-xl p-4 mb-6">
+              <p className="text-sm font-semibold text-padel-black mb-1">Design &amp; Build</p>
+              <p className="text-sm text-net-silver">We coordinate the full build — from groundworks and foundations through to court installation, canopies and complete interior fit-out. One partner for the entire project.</p>
+            </div>
             <h3
               className="text-xl sm:text-2xl font-semibold text-padel-black mb-3"
               style={{ fontFamily: "var(--font-display)" }}
@@ -543,18 +554,21 @@ export default function Home() {
           {/* Content */}
           <div className="absolute inset-0 flex flex-col justify-end px-6 lg:px-8 pb-12">
             <div className="max-w-7xl mx-auto w-full">
-              <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">Court Supply</p>
+              <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">Court Supply &amp; Build</p>
               <h2
                 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Padel Courts
+                Padel Courts &amp; Full Build
               </h2>
+              <p className="text-white/60 text-lg mb-2 max-w-xl leading-relaxed">
+                We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing classic, panoramic and super panoramic courts, delivered and installed across the UK.
+              </p>
               <p className="text-white/60 text-lg mb-6 max-w-xl leading-relaxed">
-                We partner with a premium Spanish manufacturer who have delivered more than 3,000 padel projects globally, providing incredible market knowledge as well as classic, panoramic and super panoramic courts, delivered and installed across the UK.
+                We also coordinate the full build — foundations, canopies, fit-out and project management. One partner from groundworks to opening day.
               </p>
               <Button href="/courts" size="md" variant="primary">
-                View Courts
+                View Courts &amp; Build
                 <ArrowRight size={16} />
               </Button>
             </div>
