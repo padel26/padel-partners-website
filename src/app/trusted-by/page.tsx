@@ -80,10 +80,10 @@ export default function TrustedByPage() {
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[
-              { src: "/logos/padel-shed.png", alt: "Padel Shed — padel club development client", invert: false, scale: 1.4 },
+              { src: "/logos/padel-zest.svg", alt: "Padel Zest — padel club development client", invert: false, scale: 1.2 },
               { src: "/logos/everybody.png", alt: "everybody Health & Leisure — padel facility development client", invert: false, scale: 1 },
               { src: "/logos/powerhouse-padel.png", alt: "Powerhouse Padel — padel club development client UK", invert: true, scale: 1 },
-              { src: "/logos/clubhouse.png", alt: "Clubhouse Padel Fit Social — padel club development client", invert: true, scale: 1 },
+              { src: "/logos/big-box-padel.svg", alt: "Big Box Padel Club — padel club development client", invert: false, scale: 1.2 },
               { src: "/logos/royal-parks.png", alt: "The Royal Parks — public sector padel development client", invert: false, scale: 1 },
               { src: "/logos/social-sports-society.png", alt: "Social Sports Society — padel club development client", invert: false, scale: 1 },
               { src: "/logos/padel-loft.png", alt: "The Padel Loft — padel club development client UK", invert: false, scale: 2.4 },

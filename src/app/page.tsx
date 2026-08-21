@@ -461,88 +461,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Packages preview */}
-      <section id="packages" className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey scroll-mt-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl mb-10 mx-auto text-center">
-            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
-              Packages
-            </p>
-            <h2
-              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Support at every scale
-            </h2>
-            <p className="text-lg text-net-silver">
-              We offer six tiers from light guidance to full embedded expert support.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`rounded-2xl p-7 flex flex-col bg-white border ${
-                  pkg.highlight
-                    ? "border-court-green shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
-                    : "border-gray-100 shadow-card"
-                }`}
-              >
-                {pkg.tag && (
-                  <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4 w-fit bg-court-green-light text-court-green">
-                    {pkg.tag}
-                  </span>
-                )}
-                <h3
-                  className="text-xl font-bold mb-1 text-padel-black"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {pkg.name}
-                </h3>
-                <div className="flex items-baseline gap-1 mb-2 flex-wrap">
-                  <span className="text-3xl font-bold text-padel-black">
-                    {pkg.price}
-                  </span>
-                  <span className="text-sm text-net-silver">
-                    {pkg.period}
-                  </span>
-                  {"onboardingFee" in pkg && (
-                    <span className="text-xs text-net-silver ml-1">{(pkg as typeof pkg & { onboardingFee: string }).onboardingFee}</span>
-                  )}
-                </div>
-                <p className="text-sm mb-6 text-net-silver">
-                  {pkg.description}
-                </p>
-                <ul className="space-y-2.5 mb-8 flex-1">
-                  {pkg.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-sm">
-                      <CheckCircle2 size={15} className="flex-shrink-0 text-court-green" />
-                      <span className="text-padel-black">{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/packages"
-                  className="w-full text-center py-2.5 rounded-md text-sm font-semibold transition-colors bg-court-green text-white hover:bg-court-green-dark"
-                >
-                  Subscribe — {pkg.price}/month
-                </Link>
-                <a
-                  href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full text-center py-2.5 rounded-md text-sm font-medium text-net-silver hover:text-padel-black transition-colors block"
-                >
-                  Book a Call First →
-                </a>
-              </div>
-            ))}
-          </div>
-          <PackagesExpand />
-        </div>
-      </section>
-
-
       {/* Buy Courts */}
       <section className="bg-[#141414] overflow-hidden">
         <div className="relative w-full h-[480px] lg:h-[520px]">
@@ -658,10 +576,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[
-              { src: "/logos/padel-shed.png", alt: "Padel Shed — padel club development client", invert: false, scale: 1.4 },
+              { src: "/logos/padel-zest.svg", alt: "Padel Zest — padel club development client", invert: false, scale: 1.2 },
               { src: "/logos/everybody.png", alt: "everybody Health & Leisure — padel facility development client", invert: false, scale: 1 },
               { src: "/logos/powerhouse-padel.png", alt: "Powerhouse Padel — padel club development client UK", invert: true, scale: 1 },
-              { src: "/logos/clubhouse.png", alt: "Clubhouse Padel Fit Social — padel club development client", invert: true, scale: 1 },
+              { src: "/logos/big-box-padel.svg", alt: "Big Box Padel Club — padel club development client", invert: false, scale: 1.2 },
               { src: "/logos/royal-parks.png", alt: "The Royal Parks — public sector padel development client", invert: false, scale: 1 },
               { src: "/logos/social-sports-society.png", alt: "Social Sports Society — padel club development client", invert: false, scale: 1 },
               { src: "/logos/padel-loft.png", alt: "The Padel Loft — padel club development client UK", invert: false, scale: 2.4 },
@@ -688,6 +606,87 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Packages preview */}
+      <section id="packages" className="pt-10 pb-10 px-6 lg:px-8 bg-baseline-grey scroll-mt-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-2xl mb-10 mx-auto text-center">
+            <p className="text-sm font-semibold text-court-green uppercase tracking-wider mb-3">
+              Packages
+            </p>
+            <h2
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-padel-black mb-4"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Support at every scale
+            </h2>
+            <p className="text-lg text-net-silver">
+              We offer six tiers from light guidance to full embedded expert support.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {packages.map((pkg) => (
+              <div
+                key={pkg.name}
+                className={`rounded-2xl p-7 flex flex-col bg-white border ${
+                  pkg.highlight
+                    ? "border-court-green shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+                    : "border-gray-100 shadow-card"
+                }`}
+              >
+                {pkg.tag && (
+                  <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4 w-fit bg-court-green-light text-court-green">
+                    {pkg.tag}
+                  </span>
+                )}
+                <h3
+                  className="text-xl font-bold mb-1 text-padel-black"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {pkg.name}
+                </h3>
+                <div className="flex items-baseline gap-1 mb-2 flex-wrap">
+                  <span className="text-3xl font-bold text-padel-black">
+                    {pkg.price}
+                  </span>
+                  <span className="text-sm text-net-silver">
+                    {pkg.period}
+                  </span>
+                  {"onboardingFee" in pkg && (
+                    <span className="text-xs text-net-silver ml-1">{(pkg as typeof pkg & { onboardingFee: string }).onboardingFee}</span>
+                  )}
+                </div>
+                <p className="text-sm mb-6 text-net-silver">
+                  {pkg.description}
+                </p>
+                <ul className="space-y-2.5 mb-8 flex-1">
+                  {pkg.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 size={15} className="flex-shrink-0 text-court-green" />
+                      <span className="text-padel-black">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/packages"
+                  className="w-full text-center py-2.5 rounded-md text-sm font-semibold transition-colors bg-court-green text-white hover:bg-court-green-dark"
+                >
+                  Subscribe — {pkg.price}/month
+                </Link>
+                <a
+                  href="https://calendar.app.google/YGnWn5mJxVCL8Q648"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center py-2.5 rounded-md text-sm font-medium text-net-silver hover:text-padel-black transition-colors block"
+                >
+                  Book a Call First →
+                </a>
+              </div>
+            ))}
+          </div>
+          <PackagesExpand />
         </div>
       </section>
 
