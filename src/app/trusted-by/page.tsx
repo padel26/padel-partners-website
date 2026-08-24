@@ -80,16 +80,16 @@ export default function TrustedByPage() {
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[
-              { src: "/logos/padel-zest.svg", alt: "Padel Zest — padel club development client", invert: false, scale: 1.2 },
-              { src: "/logos/everybody.png", alt: "everybody Health & Leisure — padel facility development client", invert: false, scale: 1 },
-              { src: "/logos/powerhouse-padel.png", alt: "Powerhouse Padel — padel club development client UK", invert: true, scale: 1 },
-              { src: "/logos/big-box-padel.svg", alt: "Big Box Padel Club — padel club development client", invert: false, scale: 1.2 },
-              { src: "/logos/royal-parks.png", alt: "The Royal Parks — public sector padel development client", invert: false, scale: 1 },
-              { src: "/logos/social-sports-society.png", alt: "Social Sports Society — padel club development client", invert: false, scale: 1 },
-              { src: "/logos/padel-loft.png", alt: "The Padel Loft — padel club development client UK", invert: false, scale: 2.4 },
-              { src: "/logos/lakes-by-yoo.webp", alt: "The Lakes by Yoo — luxury padel club development client", invert: false, scale: 2.0 },
-            ].map(({ src, alt, invert, scale }) => (
-              <div key={alt} className="flex items-center justify-center px-6 py-5">
+              { src: "/logos/padel-zest.svg", alt: "Padel Zest — padel club development client", invert: false, scale: 1.2, href: "https://padelzest.co.uk/" },
+              { src: "/logos/everybody.png", alt: "everybody Health & Leisure — padel facility development client", invert: false, scale: 1, href: "https://everybody.org.uk/what-we-offer/sport/padel/" },
+              { src: "/logos/powerhouse-padel.png", alt: "Powerhouse Padel — padel club development client UK", invert: true, scale: 1, href: "https://powerhousepadel.com/" },
+              { src: "/logos/big-box-padel.svg", alt: "Big Box Padel Club — padel club development client", invert: false, scale: 1.2, href: "https://www.bigboxpadelclub.com/" },
+              { src: "/logos/royal-parks.png", alt: "The Royal Parks — public sector padel development client", invert: false, scale: 1, href: "https://www.royalparks.org.uk/" },
+              { src: "/logos/social-sports-society.png", alt: "Social Sports Society — padel club development client", invert: false, scale: 1, href: "https://socialsportssociety.com/" },
+              { src: "/logos/padel-loft.png", alt: "The Padel Loft — padel club development client UK", invert: false, scale: 2.4, href: "https://www.thepadelloft.com/" },
+              { src: "/logos/lakes-by-yoo.webp", alt: "The Lakes by Yoo — luxury padel club development client", invert: false, scale: 2.0, href: "https://thelakesbyyoo.com/" },
+            ].map(({ src, alt, invert, scale, href }) => (
+              <a key={alt} href={href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-6 py-5 hover:opacity-70 transition-opacity">
                 <Image
                   src={src}
                   alt={alt}
@@ -104,7 +104,7 @@ export default function TrustedByPage() {
                     transform: `scale(${scale})`,
                   }}
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
