@@ -579,7 +579,7 @@ export default function Home() {
               { src: "/logos/padel-zest.svg", alt: "Padel Zest — padel club development client", invert: false, scale: 1.2, href: "https://padelzest.co.uk/" },
               { src: "/logos/everybody.png", alt: "everybody Health & Leisure — padel facility development client", invert: false, scale: 1, href: "https://everybody.org.uk/what-we-offer/sport/padel/" },
               { src: "/logos/powerhouse-padel.png", alt: "Powerhouse Padel — padel club development client UK", invert: true, scale: 1, href: "https://powerhousepadel.com/" },
-              { src: "/logos/big-box-padel.svg", alt: "Big Box Padel Club — padel club development client", invert: false, scale: 1.2, href: "https://www.bigboxpadelclub.com/" },
+              { src: "/logos/big-box-padel.svg", alt: "Big Box Padel Club — padel club development client", invert: false, scale: 1.6, href: "https://www.bigboxpadelclub.com/" },
               { src: "/logos/royal-parks.png", alt: "The Royal Parks — public sector padel development client", invert: false, scale: 1, href: "https://www.royalparks.org.uk/" },
               { src: "/logos/social-sports-society.png", alt: "Social Sports Society — padel club development client", invert: false, scale: 1, href: "https://socialsportssociety.com/" },
               { src: "/logos/padel-loft.png", alt: "The Padel Loft — padel club development client UK", invert: false, scale: 2.4, href: "https://www.thepadelloft.com/" },
